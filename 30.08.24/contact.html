@@ -29,9 +29,58 @@
             <section>
                 <h2>Om oss</h2>
             </section>
+            <section>
+                <h2>Ta kontakt med oss idag </h2>
+                <form method="post">
+                    <label for="Navn">Navn:</label>
+                    <input type="text" name="Navn" placeholder="Nora Nordmann" id="Navn" maxlength="45" required>
+                    
+                    <label>
+                        E-Post:
+                        <input type="email" name="email" placeholder="eksempel@hiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                    </label>
+
+                    <label>
+                        Emne:
+                        <input type="text" name="Emne" placeholder="Hva handler det om?">
+                    </label>
+
+                    <label>
+                        Melding:    
+                        <textarea name="melding" required></textarea>
+                    </label>
+                    <label>
+                        nei
+                        <input type="radio" name="Valg">
+                    <label>
+                        ja
+                        <input type="radio" name="Valg">
+                    </label>
+                    <label>
+                        Kanskje
+                        <input type="radio" name="Valg">
+                    </label>
+                    </label>
+                    <input type="submit" value="send melding">
+
+                    <label> 
+                        Favoritt mat
+                    <select name="fav">
+                        <option value="Pizza">Pizza</option>
+                        <option value="Kebab">Kebab</option>
+                        <option value="Sushi">Sushi</option>
+                        <option value="Taco">Taco</option>
+                    </select>
+                    </label>
+                </form>
+            </section>
         </main>
 
-        <footer>2024 Jimmy Bui</footer>    
+        <footer id="footer-content">
+            <p>Jimmy Bui</p>
+            <p>Telefon: +47 413 81 350</p>
+            <p>Email: Jimmybui1234@otmail.com</p>
+        </footer>  
     
     </body>
 
