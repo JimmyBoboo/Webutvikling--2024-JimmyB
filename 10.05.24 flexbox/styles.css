@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+
+
+}
+
+#airjordan{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+}
+
+.navigasjon{
+        padding: 1rem;
+        align-items: center;
+        justify-content: space-evenly;
+        display: flex;
+        box-sizing: border-box;
+        background-color: #d8dde5;
+        flex-direction: row;
+        flex-wrap: wrap;
+}
+       
+
+
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1rem;
+}
