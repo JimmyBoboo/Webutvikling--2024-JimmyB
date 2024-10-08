@@ -7,7 +7,8 @@
         <title>Zalando</title>
     </head>
     <body>
-        <header>
+        <div id="grid-container">
+        <header id="global-header">
             <img id="main-logo" src="img/zalandologo.webp" alt="Nettsted logo">
             <nav class="flex-space-b">
                 <ul class="flex-menu">
@@ -29,9 +30,10 @@
             </nav>
         </header>
         <main>
-            <section>
-                <h2>Våre beste deals</h2>
-                <a href="#">Shop nå -></a>
+            <section id="banner">
+                <div><h2>Våre beste deals</h2>
+                    <a href="#">Shop nå -></a>
+                </div>
                 <img src="img/banner.webp" alt="Bilde av model">
             </section>
             <section class="flex-space-b">
@@ -90,10 +92,17 @@
                     <a href="#"><h3>SHUV</h3></a>
                     <p>1 705,00 kr</p>
                 </article>
+                <article class="product-card">
+                    <img src="img/produktbilde.webp" alt="FitFlop - SHUV - Sandaler">
+                    <a href="#">FitFlop</a>
+                    <a href="#"><h3>SHUV</h3></a>
+                    <p>1 705,00 kr</p>
+                </article>
             </section>
 
         </main>
-        <footer>Zalando Light</footer>
-
+        <footer>Zalando Light
+        </footer>
+        </div>
     </body>
 </html>

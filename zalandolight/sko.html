@@ -7,7 +7,8 @@
         <title>Zalando</title>
     </head>
     <body>
-        <header>
+        <div id="grid-container">
+        <header id="global-header">
             <img id="main-logo" src="img/zalandologo.webp" alt="Nettsted logo">
             <nav class="flex-space-b">
                 <ul class="flex-menu">
@@ -28,15 +29,7 @@
                 </form>
             </nav>
         </header>
-        <main>
-            <nav>
-                <ul>
-                    <li><a href="#">Dame ></a></li>
-                    <li>Sko</li>
-                </ul>
-            </nav>
-            <h1>Sko til damer</h1>
-            <aside>
+            <aside id="category-menu">
                 <nav>
                     <ul>
                         <li>
@@ -54,7 +47,15 @@
                     </ul>
                 </nav>
             </aside>
-            <section>
+        <main>
+            <nav>
+                <ul>
+                    <li><a href="#">Dame ></a></li>
+                    <li>Sko</li>
+                </ul>
+            </nav>
+            <h1>Sko til damer</h1>
+            <section class="flex-space-b">
                 <h2>Produkter</h2>
                 <form>
                     <select name="brand">
@@ -70,56 +71,56 @@
                         <option value="Tilbud">På salg</option>
                     </select>
                 </form>
-                <section>
-                    <article>
+                <section class="flex-space-b">
+                    <article class="product-card">
                         <img src="img/produktbilde.webp" alt="FitFlop - SHUV - Sandaler">
                         <a href="#">FitFlop</a>
                         <a href="#"><h3>SHUV</h3></a>
                         <p>1 705,00 kr</p>
                     </article>
-                    <article>
+                    <article class="product-card">
                         <img src="img/produktbilde.webp" alt="FitFlop - SHUV - Sandaler">
                         <a href="#">FitFlop</a>
                         <a href="#"><h3>SHUV</h3></a>
                         <p>1 705,00 kr</p>
                     </article>
-                    <article>
+                    <article class="product-card">
                         <img src="img/produktbilde.webp" alt="FitFlop - SHUV - Sandaler">
                         <a href="#">FitFlop</a>
                         <a href="#"><h3>SHUV</h3></a>
                         <p>1 705,00 kr</p>
                     </article>
-                    <article>
+                    <article class="product-card">
                         <img src="img/produktbilde.webp" alt="FitFlop - SHUV - Sandaler">
                         <a href="#">FitFlop</a>
                         <a href="#"><h3>SHUV</h3></a>
                         <p>1 705,00 kr</p>
                     </article>
-                    <article>
+                    <article class="product-card">
                         <img src="img/produktbilde.webp" alt="FitFlop - SHUV - Sandaler">
                         <a href="#">FitFlop</a>
                         <a href="#"><h3>SHUV</h3></a>
                         <p>1 705,00 kr</p>
                     </article>
-                    <article>
+                    <article class="product-card">
                         <img src="img/produktbilde.webp" alt="FitFlop - SHUV - Sandaler">
                         <a href="#">FitFlop</a>
                         <a href="#"><h3>SHUV</h3></a>
                         <p>1 705,00 kr</p>
                     </article>
-                    <article>
+                    <article class="product-card">
                         <img src="img/produktbilde.webp" alt="FitFlop - SHUV - Sandaler">
                         <a href="#">FitFlop</a>
                         <a href="#"><h3>SHUV</h3></a>
                         <p>1 705,00 kr</p>
                     </article>
-                    <article>
+                    <article class="product-card">
                         <img src="img/produktbilde.webp" alt="FitFlop - SHUV - Sandaler">
                         <a href="#">FitFlop</a>
                         <a href="#"><h3>SHUV</h3></a>
                         <p>1 705,00 kr</p>
                     </article>
-                    <article>
+                    <article class="product-card">
                         <img src="img/produktbilde.webp" alt="FitFlop - SHUV - Sandaler">
                         <a href="#">FitFlop</a>
                         <a href="#"><h3>SHUV</h3></a>
@@ -128,6 +129,9 @@
                 </section>
             </section>
         </main>
-        <footer>Zalando Light</footer>
+        <footer>
+            Zalando Light
+        </footer>
+        </div>
     </body>
 </html>
