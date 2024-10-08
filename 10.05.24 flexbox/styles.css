@@ -1,27 +1,21 @@
-*{
-    box-sizing: border-box;
 
 
-}
-
-#airjordan{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 500px;
-    margin: 0 auto;
+#headeren{
+    background-image: url(img/air-jordan-jumpman-logo.jpg);
     background-size: cover;
-    background-position: center;
+    max-width: 100%;
+    padding: 10rem;
 }
 
-.navigasjon{
-        padding: 1rem;
-        align-items: center;
-        justify-content: space-evenly;
-        display: flex;
-        box-sizing: border-box;
-        background-color: #d8dde5;
-        flex-direction: row;
-        flex-wrap: wrap;
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 1rem;
+    flex-wrap: wrap;
+    max-width: 100%;
+    flex-direction: row;
 }
        
 
