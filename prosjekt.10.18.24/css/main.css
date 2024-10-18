@@ -55,10 +55,16 @@
 }
 body {
   font-family: "Roboto", sans-serif;
+  background-color: antiquewhite;
 }
 
 video {
   width: 100%;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
 }
 
 #video-banner {
