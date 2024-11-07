@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/*------------------- Header området -----------------------------------*/
+#global-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10rem;
+}
+
+#navbar ul{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    gap: 2rem;
+    font-size: 20px;
+    padding: 1rem;
+}
+
+#navbar ul a{
+    text-decoration: none;
+    color: black;
+}
+
+
+#logo-header{
+    display: flex;
+    max-width: 110px;
+    justify-content: center;
+}
+
+#icons-hoyre{
+    display: flex;
+    gap: 1rem;
+}
+
+form label input{
+    display: flex;
+    padding: 0.3rem;
+    width: 80%;
+    border-radius: 20px;
+
+}
+
+
+/*------------------------------------------------------*/
+
