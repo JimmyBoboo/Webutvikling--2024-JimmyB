@@ -56,6 +56,7 @@ body{
 #icons-hoyre i{
     padding: 0.3rem;
     margin-top: 0.5rem;
+    color: black;
 }
 
 #logo-header{
@@ -64,6 +65,72 @@ body{
 
 /* Banneren/SlideShow */
 
+.banner{
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+input[type='radio']{
+    display: none;
+}
+
+.sliderne{
+    position: relative;
+    width: 100%;
+    
+}
+ 
+
+.slide figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: right;
+    padding: 20px;
+}
+
+
+.slide h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.slide p{
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.les-mer{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    color: #000;
+    font-size: 1rem;
+}
+
+.slide{
+    padding: 5rem 10rem;
+    border-radius: 20px;
+    height: 100%;
+    margin: 10px;
+}
+
+#slider1{
+    background-image: url(https://picsum.photos/seed/picsum/500/500);
+}
+
+#slider2{
+    background-image: url(https://picsum.photos/id/27/500/500);
+}
+
+#slider3{
+    background-image: url(https://picsum.photos/id/26/500/500);
+} 
 
 
 
@@ -90,3 +157,4 @@ body{
         margin: 0 10px;
     }
 }
+
