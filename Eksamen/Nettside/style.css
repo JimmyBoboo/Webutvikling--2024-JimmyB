@@ -78,20 +78,20 @@ input[type='radio']{
     display: none;
 }
 
-.sliderne{
+/* .sliderne{
     position: relative;
     width: 100%;
     
-}
+} */
  
 
 .slide figure{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     height: 100%;
     text-align: right;
-    padding: 20px;
+    padding: 15px;
 }
 
 
@@ -107,10 +107,11 @@ input[type='radio']{
 
 .les-mer{
     padding: 10px 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     border: none;
     color: #000;
     font-size: 1rem;
+    padding: 0.5rem 0.7rem;
 }
 
 .slide{
@@ -120,17 +121,21 @@ input[type='radio']{
     margin: 10px;
 }
 
+/* .slide, figure, figcaption{
+    display: flex;
+} */
+
 #slider1{
-    background-image: url(https://picsum.photos/seed/picsum/500/500);
+    background-image: url(https://picsum.photos/id/26/500/500);
 }
 
-#slider2{
+/* #slider2{
     background-image: url(https://picsum.photos/id/27/500/500);
 }
 
 #slider3{
     background-image: url(https://picsum.photos/id/26/500/500);
-} 
+}  */
 
 
 
