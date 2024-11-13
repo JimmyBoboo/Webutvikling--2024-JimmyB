@@ -138,6 +138,57 @@ body{
 }  */
 
 
+/* Våre mest populære produkter Seksjon */
+
+#popular-products{
+    display: grid;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#popular-products h2{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#popular-products p{
+    display: grid;
+    align-content: center;
+    padding: 1rem;
+    margin: 0 4rem;
+}
+
+#knapper-produkter{
+    display: flex;
+    justify-content: space-between;
+}
+
+.knapper-prod{
+    border-radius: 50px;
+    border: 0.3px solid black;
+    color: #000000;
+    font-size: 1rem;
+    padding: 1.5rem 1rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+#svart-knapp{
+    background-color: #353333;
+    color: #fff;
+}
+
+
+
+
+
+
+
 /* -----Populære produkter */
 
 #product-card{
