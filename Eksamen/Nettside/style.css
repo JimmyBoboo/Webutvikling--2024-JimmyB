@@ -74,9 +74,9 @@ body{
 }
 
 
-input[type='radio']{
+/* input[type='radio']{
     display: none;
-}
+} */
 
 /* .sliderne{
     position: relative;
@@ -138,6 +138,55 @@ input[type='radio']{
 }  */
 
 
+/* -----Populære produkter */
+
+#product-card{
+    margin: 0.1rem;
+    align-content: center;
+
+}
+
+.skobilde{
+    display: flex;
+    max-width: 100%;
+    height: 100%;
+    align-content: center;
+    padding: 0.5rem;
+    margin: auto;
+    border-radius: 50px;
+}
+
+article a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    flex-direction: row;
+}
+
+article p{
+    margin: 0 1rem;
+}
+
+article header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px 15px;
+
+
+}
+
+.reviews{
+    display: flex;
+    margin: 0 8px;
+}
+
+.reviews i{
+    padding: 0.2rem;
+}
+
+.reviews h4{
+    padding: 0.2rem;
+}
 
 
 
@@ -161,5 +210,21 @@ input[type='radio']{
         align-items: center;
         margin: 0 10px;
     }
+/* Populare produkter */
+
+    
+    #produktene{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        justify-content: space-between;
+    }
+
+    #product-card{
+        max-width: 350px;
+        padding: 2rem;
+    }
+
+    
 }
 
