@@ -194,7 +194,7 @@ body{
 #product-card{
     margin: 0.1rem;
     align-content: center;
-
+    padding: 0 0 2rem;
 }
 
 .skobilde{
@@ -222,8 +222,6 @@ article header{
     display: flex;
     justify-content: space-between;
     margin: 0 10px 15px;
-
-
 }
 
 .reviews{
@@ -237,6 +235,157 @@ article header{
 
 .reviews h4{
     padding: 0.2rem;
+}
+
+/* poplære kategorier */
+
+#tekst-boks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 2rem;
+    padding: 0 0 1rem;
+
+
+}
+
+#popular-kategorier{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+#kategori1{
+    /* Bildet er tatt av <a href="https://pixabay.com/no/users/darkmoon_art-1664300/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=9042354">Dorothe</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=9042354">Pixabay</a> */
+    background-image: url(../Nettside/bilder/Jul.jpg);
+    background-size: 450px 350px;
+}
+
+#kategori2{
+    /* Bildet er tatt av <a href="https://pixabay.com/no/users/jarmoluk-143740/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=428607">Michal Jarmoluk</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=428607">Pixabay</a> */
+    background-image: url(../Nettside/bilder/blackfriday.jpg);
+    background-size: 450px 350px;
+}
+
+#kategori3{
+    /* Bildet er tatt av <a href="https://pixabay.com/no/users/pexels-2286921/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1866619">Pexels</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1866619">Pixabay</a> */
+    background-image: url(../Nettside/bilder/accessories.jpg);
+    background-size: 400px 400px;
+    padding: 10rem;
+}
+
+#kategori4{
+    /* Bildet er tatt av <a href="https://pixabay.com/no/users/alba1970-29824635/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8293794">alba1970</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8293794">Pixabay</a> */
+    background-image: url(../Nettside/bilder/sport.jpg);
+    background-size: 450px 350px;
+}
+
+#kategori5{
+    /* Bildet er tatt av <a href="https://pixabay.com/no/users/jupilu-9196359/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7061815">Jupi Lu</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7061815">Pixabay</a> */
+    background-image: url(../Nettside/bilder/streetwar.jpg);
+    background-size: 450px 320px;
+}
+
+.kort {
+    padding: 9rem;
+    margin: 0.5rem;
+    border-radius: 20px;
+}
+
+.kort h3{
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Produkt-Anmeldelser */
+#anmeldelser h2{
+    padding: 1rem;
+}
+#anmeldelser section article{
+    max-width: 350px;
+    min-width: 300px;
+    width: 100px;
+    margin: 0 1rem;
+    box-shadow: 15px 10px 10px 0px #e9e3e3; 
+    border-radius: 10px;
+    border: 1px solid #ddd5d5;
+}
+
+#anmeldelser-boks{
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    overflow: scroll;
+}
+
+#anmeldelser section article img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin: 1rem;
+}
+
+#anmeldelser h3{
+    padding: 0 1rem 1rem;
+}
+
+aside {
+    margin: 0 0 1rem;
+}
+
+ul{
+    margin: 0 1rem 1rem;
+}
+
+/* Footer */
+
+#display-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+#ingress{
+    margin: 0.5rem;
+    text-decoration: none;
+    list-style: none;
+    padding: 0 0 1.5rem;
+}
+
+#kontakt h4{
+    margin: 0.5rem;
+}
+#kontakt label{
+    display: flex;
+    gap: 1rem;
+    margin: 0.5rem;
+    font-size: 15px;
+}
+
+#snarveier{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.5rem;
+}
+
+#snarveier ul{
+    list-style: none;
+}
+
+#snarveier ul li a{
+    color: black;
+    text-decoration: none;
+    list-style: none;
+    font-size: 15px;
+}
+
+#sosiale-medier{
+    margin: 0.5rem;
+}
+
+#sosiale-medier h4{
+    padding:  0 0 1rem;
 }
 
 
