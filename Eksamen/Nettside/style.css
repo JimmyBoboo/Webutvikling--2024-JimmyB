@@ -59,7 +59,7 @@ body{
     color: black;
 }
 
-#logo-header{
+.logo-header{
     width: 100px;
 }
 
@@ -191,7 +191,7 @@ body{
 
 /* -----Populære produkter */
 
-#product-card{
+.product-card{
     margin: 0.1rem;
     align-content: center;
     padding: 0 0 2rem;
@@ -291,6 +291,9 @@ article header{
     padding: 9rem;
     margin: 0.5rem;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
 }
 
 .kort h3{
@@ -305,7 +308,7 @@ article header{
 #anmeldelser h2{
     padding: 1rem;
 }
-#anmeldelser section article{
+#anmeldelser article{
     max-width: 350px;
     min-width: 300px;
     width: 100px;
@@ -322,7 +325,7 @@ article header{
     overflow: scroll;
 }
 
-#anmeldelser section article img {
+#anmeldelser article img {
     max-width: 100px;
     border-radius: 50%;
     margin: 1rem;
@@ -332,13 +335,14 @@ article header{
     padding: 0 1rem 1rem;
 }
 
-aside {
-    margin: 0 0 1rem;
+#anmeldelser ul li{
+    margin: 0 1rem;
+    text-decoration: none;
+    list-style: none;
 }
 
-ul{
-    margin: 0 1rem 1rem;
-}
+
+
 
 /* Footer */
 
@@ -346,6 +350,9 @@ ul{
     display: grid;
     grid-template-columns: auto auto auto;
 }
+
+
+
 #ingress{
     margin: 0.5rem;
     text-decoration: none;
@@ -356,12 +363,14 @@ ul{
 #kontakt h4{
     margin: 0.5rem;
 }
-#kontakt label{
+
+.informasjon{
     display: flex;
     gap: 1rem;
     margin: 0.5rem;
     font-size: 15px;
 }
+
 
 #snarveier{
     display: flex;

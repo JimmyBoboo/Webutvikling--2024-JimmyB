@@ -3,25 +3,25 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="icons/css/fontawesome.css" rel="stylesheet" />
-    <link href="icons/css/brands.css" rel="stylesheet" />
-    <link href="icons/css/all.css" rel="stylesheet" />
+    <link href="icons/css/fontawesome.css" rel="stylesheet">
+    <link href="icons/css/brands.css" rel="stylesheet">
+    <link href="icons/css/all.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forsiden</title>
 </head>
 <body>
-<div id="flex-container">
+
         <header id="global-header">
             <form id="search">
                     <input type="search" placeholder="Søk her" id="søkefelt">
-                    <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
+                    <label class="search"><i class="fa-solid fa-magnifying-glass"></i></label>
             </form>
             <nav class="navbar">
                 <ul>
                     <li><a href="index.html">Hjem</a></li>
                     <li><a href="produkt.html">Produkter</a></li>
-                    <li><a href="index.html"><img src="./bilder/logo.png" alt="Nettside logo" id="logo-header"></a></li>
+                    <li><a href="index.html"><img src="./bilder/logo.png" alt="Nettside logo" class="logo-header"></a></li>
                     <li><a href="#">Kategorier</a></li>
                     <li><a href="#">Kontakt oss</a></li>
                 </ul>
@@ -29,7 +29,7 @@
             <label id="icons-hoyre">
                 <i class="fa-regular fa-user"></i>
                 <i class="fa-regular fa-heart"></i>
-                <a href="handlekurv.html"><i class="fa-solid fa-cart-shopping"></i></a></i>
+                <a href="handlekurv.html"><i class="fa-solid fa-cart-shopping"></i></a>
             </label>
         </header>
 <main>
@@ -48,12 +48,12 @@
         </article>
     </section>
 
-        <!-- ----- -->
+ 
         <section id="popular-products">
                 <h2>Våre meste populære produkter</h2>
                 <p>Oppdag det beste av det beste</p>
                 <form id="knapper-produkter">
-                    <button id="svart-knapp"class="knapper-prod">New Product</button>
+                    <button id="svart-knapp" class="knapper-prod">New Product</button>
                     <button class="knapper-prod">Special Price</button>
                     <button class="knapper-prod">Best sellers</button>
 
@@ -61,16 +61,15 @@
         </section>
             
         <div id="produktene">
-            <article id="product-card">
+            <article class="product-card">
                 <picture>
                     <!-- Photo by <a href="https://unsplash.com/@dominostudio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Domino Studio</a> on <a href="https://unsplash.com/photos/unpaired-red-nike-sneaker-164_6wVEHfI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
                     <source media="(max-width:400px)" srcset="Nettside/bilder/skobilde.png">
                     <img src="bilder/skobilde.jpg" alt="Sko" class="skobilde">
                 </picture>
-                <section>
                     <header>
                         <a href="#"><h3>Nike - ZoomFly</h3></a> 
-                        <p>Kr 1299</p>
+                        <h4>Kr 1299</h4>
                     </header>
                     <footer class="reviews">
                         <i class="fa-solid fa-star"></i> 
@@ -80,16 +79,14 @@
                         <i class="fa-regular fa-star"></i>
                         <h4>842 Reviews</h4>
                     </footer>
-                </section>
             </article>
 
-            <article id="product-card">
+            <article class="product-card">
                 <picture>
                     <!-- Photo by <a href="https://unsplash.com/@dominostudio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Domino Studio</a> on <a href="https://unsplash.com/photos/unpaired-red-nike-sneaker-164_6wVEHfI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
                     <source media="(max-width:400px)" srcset="Nettside/bilder/skobilde.png">
                     <img src="bilder/skobilde.jpg" alt="Sko" class="skobilde">
                 </picture>
-                <section>
                     <header>
                         <a href="#"><h3>Nike - ZoomFly</h3></a> 
                         <p>Kr 1299</p>
@@ -102,16 +99,14 @@
                         <i class="fa-regular fa-star"></i>
                         <h4>842 Reviews</h4>
                     </footer>
-                </section>
             </article>
 
-            <article id="product-card">
+            <article class="product-card">
                 <picture>
                     <!-- Photo by <a href="https://unsplash.com/@dominostudio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Domino Studio</a> on <a href="https://unsplash.com/photos/unpaired-red-nike-sneaker-164_6wVEHfI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
                     <source media="(max-width:400px)" srcset="Nettside/bilder/skobilde.png">
                     <img src="bilder/skobilde.jpg" alt="Sko" class="skobilde">
                 </picture>
-                <section>
                     <header>
                         <a href="#"><h3>Nike - ZoomFly</h3></a> 
                         <p>Kr 1299</p>
@@ -124,16 +119,14 @@
                         <i class="fa-regular fa-star"></i>
                         <h4>842 Reviews</h4>
                     </footer>
-                </section>
             </article>
 
-            <article id="product-card">
+            <article class="product-card">
                 <picture>
                     <!-- Photo by <a href="https://unsplash.com/@dominostudio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Domino Studio</a> on <a href="https://unsplash.com/photos/unpaired-red-nike-sneaker-164_6wVEHfI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
                     <source media="(max-width:400px)" srcset="Nettside/bilder/skobilde.png">
                     <img src="bilder/skobilde.jpg" alt="Sko" class="skobilde">
                 </picture>
-                <section>
                     <header>
                         <a href="#"><h3>Nike - ZoomFly</h3></a> 
                         <p>Kr 1299</p>
@@ -146,16 +139,14 @@
                         <i class="fa-regular fa-star"></i>
                         <h4>842 Reviews</h4>
                     </footer>
-                </section>
             </article>
 
-            <article id="product-card">
+            <article class="product-card">
                 <picture>
                     <!-- Photo by <a href="https://unsplash.com/@dominostudio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Domino Studio</a> on <a href="https://unsplash.com/photos/unpaired-red-nike-sneaker-164_6wVEHfI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
                     <source media="(max-width:400px)" srcset="Nettside/bilder/skobilde.png">
                     <img src="bilder/skobilde.jpg" alt="Sko" class="skobilde">
                 </picture>
-                <section>
                     <header>
                         <a href="#"><h3>Nike - ZoomFly</h3></a> 
                         <p>Kr 1299</p>
@@ -168,15 +159,13 @@
                         <i class="fa-regular fa-star"></i>
                         <h4>842 Reviews</h4>
                     </footer>
-                </section>
             </article>
-            <article id="product-card">
+            <article class="product-card">
                 <picture>
                     <!-- Photo by <a href="https://unsplash.com/@dominostudio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Domino Studio</a> on <a href="https://unsplash.com/photos/unpaired-red-nike-sneaker-164_6wVEHfI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
                     <source media="(max-width:400px)" srcset="Nettside/bilder/skobilde.png">
                     <img src="bilder/skobilde.jpg" alt="Sko" class="skobilde">
                 </picture>
-                <section>
                     <header>
                         <a href="#"><h3>Nike - ZoomFly</h3></a> 
                         <p>Kr 1299</p>
@@ -189,11 +178,9 @@
                         <i class="fa-regular fa-star"></i>
                         <h4>842 Reviews</h4>
                     </footer>
-                </section>
             </article>
         </div>
             
-        <section id="popular-kategorier">
             <section id="tekst-boks">
                 <h2>Våre mest populære Kategorier</h2>
                 <p>Oppdag det beste av oss</p>
@@ -218,122 +205,121 @@
                 <h3>Streetwear</h3>
             </article>
             
-        </section>
+
         <section id="anmeldelser">
             <h2>Anmeldelser</h2>
             <div id="anmeldelser-boks">
-            <section>
                 <article class="produkt-anmeldelse">
                    <img src="bilder/anmeldelse.jpg" alt="Produktanmeldelse"> 
-                   <aside>
                    <h3>Aenean tellus</h3>
                    <ul>
+                    <li>
                         <i class="fa-solid fa-star"></i> 
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-regular fa-star"></i>
+                    </li>
                     </ul>
                    <p>Sed consectetur nisi nec lorem ullamcorper varius. Nunc fermentum hendrerit sollicitudin. Quisque sit amet porttitor nunc, a porta orci. Maecenas consequat auctor quam, vitae viverra dolor molestie vitae. Praesent a quam in dolor lobortis porttitor. Nulla facilisi. Quisque non velit non eros faucibus consequat eu non ipsum.</p>
-                    </aside>
                 </article>
-            </section>
-            <section>
+
                 <article class="produkt-anmeldelse">
-                   <img src="bilder/anmeldelse.jpg" alt="Produktanmeldelse"> 
-                   <aside>
-                   <h3>Aenean tellus</h3>
-                   <ul>
-                        <i class="fa-solid fa-star"></i> 
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </ul>
-                   <p>Sed consectetur nisi nec lorem ullamcorper varius. Nunc fermentum hendrerit sollicitudin. Quisque sit amet porttitor nunc, a porta orci. Maecenas consequat auctor quam, vitae viverra dolor molestie vitae. Praesent a quam in dolor lobortis porttitor. Nulla facilisi. Quisque non velit non eros faucibus consequat eu non ipsum.</p>
-                    </aside>
-                </article>
-            </section>
-            <section>
-                <article class="produkt-anmeldelse">
-                   <img src="bilder/anmeldelse.jpg" alt="Produktanmeldelse"> 
-                   <aside>
-                   <h3>Aenean tellus</h3>
-                   <ul>
-                        <i class="fa-solid fa-star"></i> 
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </ul>
-                   <p>Sed consectetur nisi nec lorem ullamcorper varius. Nunc fermentum hendrerit sollicitudin. Quisque sit amet porttitor nunc, a porta orci. Maecenas consequat auctor quam, vitae viverra dolor molestie vitae. Praesent a quam in dolor lobortis porttitor. Nulla facilisi. Quisque non velit non eros faucibus consequat eu non ipsum.</p>
-                    </aside>
-                </article>
-            </section>
-            <section>
-                <article class="produkt-anmeldelse">
-                   <img src="bilder/anmeldelse.jpg" alt="Produktanmeldelse"> 
-                   <aside>
-                   <h3>Aenean tellus</h3>
-                   <ul>
-                        <i class="fa-solid fa-star"></i> 
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </ul>
-                   <p>Sed consectetur nisi nec lorem ullamcorper varius. Nunc fermentum hendrerit sollicitudin. Quisque sit amet porttitor nunc, a porta orci. Maecenas consequat auctor quam, vitae viverra dolor molestie vitae. Praesent a quam in dolor lobortis porttitor. Nulla facilisi. Quisque non velit non eros faucibus consequat eu non ipsum.</p>
-                    </aside>
-                </article>
-            </section>
+                    <img src="bilder/anmeldelse.jpg" alt="Produktanmeldelse"> 
+                    <h3>Aenean tellus</h3>
+                    <ul>
+                     <li>
+                         <i class="fa-solid fa-star"></i> 
+                         <i class="fa-solid fa-star"></i>
+                         <i class="fa-solid fa-star"></i>
+                         <i class="fa-solid fa-star"></i>
+                         <i class="fa-regular fa-star"></i>
+                     </li>
+                     </ul>
+                    <p>Sed consectetur nisi nec lorem ullamcorper varius. Nunc fermentum hendrerit sollicitudin. Quisque sit amet porttitor nunc, a porta orci. Maecenas consequat auctor quam, vitae viverra dolor molestie vitae. Praesent a quam in dolor lobortis porttitor. Nulla facilisi. Quisque non velit non eros faucibus consequat eu non ipsum.</p>
+                 </article>
+
+
+                 <article class="produkt-anmeldelse">
+                    <img src="bilder/anmeldelse.jpg" alt="Produktanmeldelse"> 
+                    <h3>Aenean tellus</h3>
+                    <ul>
+                     <li>
+                         <i class="fa-solid fa-star"></i> 
+                         <i class="fa-solid fa-star"></i>
+                         <i class="fa-solid fa-star"></i>
+                         <i class="fa-solid fa-star"></i>
+                         <i class="fa-regular fa-star"></i>
+                     </li>
+                     </ul>
+                    <p>Sed consectetur nisi nec lorem ullamcorper varius. Nunc fermentum hendrerit sollicitudin. Quisque sit amet porttitor nunc, a porta orci. Maecenas consequat auctor quam, vitae viverra dolor molestie vitae. Praesent a quam in dolor lobortis porttitor. Nulla facilisi. Quisque non velit non eros faucibus consequat eu non ipsum.</p>
+                 </article>
+
+                 <article class="produkt-anmeldelse">
+                    <img src="bilder/anmeldelse.jpg" alt="Produktanmeldelse"> 
+                    <h3>Aenean tellus</h3>
+                    <ul>
+                     <li>
+                         <i class="fa-solid fa-star"></i> 
+                         <i class="fa-solid fa-star"></i>
+                         <i class="fa-solid fa-star"></i>
+                         <i class="fa-solid fa-star"></i>
+                         <i class="fa-regular fa-star"></i>
+                     </li>
+                     </ul>
+                    <p>Sed consectetur nisi nec lorem ullamcorper varius. Nunc fermentum hendrerit sollicitudin. Quisque sit amet porttitor nunc, a porta orci. Maecenas consequat auctor quam, vitae viverra dolor molestie vitae. Praesent a quam in dolor lobortis porttitor. Nulla facilisi. Quisque non velit non eros faucibus consequat eu non ipsum.</p>
+                 </article>
+
         </div>
         </section>
 
         <footer>
-            <section id="ingress">
+            <nav id="ingress">
                 <ul>
-                    <li><a href="index.html"><img src="./bilder/logo.png" alt="Nettside logo" id="logo-header"></a></li>
+                    <li><a href="index.html"><img src="./bilder/logo.png" alt="Nettside logo" class="logo-header"></a></li>
                 </ul>
                 <p>
                     Quisque mollis erat dolor, in lacinia arcu aliquam nec. dolor, in lacinia arcu aliquam nec. Suspendisse id sagittis tortor. 
                 </p>
-            </section>
+            </nav>
+
             <div id="display-grid">
             <section id="kontakt">
                 <h4>KONTAKT</h4>
-                <label>
+                <section class="informasjon">
                     <i class="fa-solid fa-location-dot"></i>
                     <h5>Adresse:</h5>
                     <p>F.A Gate 48 1720 Sarpelona</p>
-                </label>
-                <label>
+                </section>
+                <section class="informasjon">
                     <i class="fa-solid fa-phone"></i>
                     <h5>Telefon:</h5>
                     <p>+47 69 72 80 40</p>
-                </label>
-                <label>
+                </section>
+                <section class="informasjon">
                     <i class="fa-solid fa-envelope"></i>
                     <h5>E-Post:</h5>
                     <p>JimmyBu@hiof.no</p>
-                </label>
-                <label>
+                </section>
+                <section class="informasjon">
                     <i class="fa-solid fa-clock"></i>
                     <h5>Åpningstider:</h5>
                     <p>08:00 - 20:00</p>
-                </label>
+                </section>
             </section>
 
-            <section id="snarveier">
+            <nav id="snarveier">
                 <aside>
+                    <h4>SNARVEIER</h4>
                     <ul>
-                        <h4>SNARVEIER</h4>
                         <li><a href="#">Produkter</a></li>
                         <li><a href="#">Kategorier</a></li>
                         <li><a href="#">Kontakt oss</a></li>
                     </ul>
                 </aside>
+            </nav>
             </div>
-            </section>
+
 
             <section id="sosiale-medier">
                 <h4>SOSIALE MEDIER</h4>
@@ -345,7 +331,7 @@
                 </label>
             </section>
         </footer>
-    </div>
+
 
 </main>
 </body>
