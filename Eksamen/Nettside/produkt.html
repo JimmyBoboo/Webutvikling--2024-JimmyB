@@ -1,67 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="icons/css/fontawesome.css" rel="stylesheet">
-    <link href="icons/css/brands.css" rel="stylesheet">
-    <link href="icons/css/all.css" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="icons/css/fontawesome.css" rel="stylesheet" />
+    <link href="icons/css/brands.css" rel="stylesheet" />
+    <link href="icons/css/all.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Produkt</title>
-</head>
-<body>
-    <header id="global-header">
+  </head>
+  <body>
+    <div id="flex-container">
+      <header id="global-header">
         <form id="search">
-                <input type="search" placeholder="Søk her" id="søkefelt">
-                <label class="search"><i class="fa-solid fa-magnifying-glass"></i></label>
+          <input type="search" placeholder="Søk her" id="søkefelt" />
+          <label class="search"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></label>
         </form>
         <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Hjem</a></li>
-                <li><a href="produkt.html">Produkter</a></li>
-                <li><a href="index.html"><img src="./bilder/logo.png" alt="Nettside logo" class="logo-header"></a></li>
-                <li><a href="#">Kategorier</a></li>
-                <li><a href="#">Kontakt oss</a></li>
-            </ul>
+          <ul>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="produkt.html">Produkter</a></li>
+            <li>
+              <a href="index.html"
+                ><img
+                  src="./bilder/logo.png"
+                  alt="Nettside logo"
+                  class="logo-header"
+              /></a>
+            </li>
+            <li><a href="#">Kategorier</a></li>
+            <li><a href="#">Kontakt oss</a></li>
+          </ul>
         </nav>
         <label id="icons-hoyre">
-            <i class="fa-regular fa-user"></i>
-            <i class="fa-regular fa-heart"></i>
-            <a href="handlekurv.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          <i class="fa-regular fa-user"></i>
+          <i class="fa-regular fa-heart"></i>
+          <a href="handlekurv.html"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
         </label>
-    </header>
-    <main>
-        <nav>
-            <ul id="brodsmulestil">
-                <li><a href="index.html">Hjem <i class="fa-solid fa-arrow-right"></i> </a></li>
-                <li><a href="#">Kategori <i class="fa-solid fa-arrow-right"></i> </a></li>
-                <li><a href="#">Nike-Zoomfly</a></li>
-            </ul>
-
-            <div id="bilde-produkt">
-                <aside class="side-bildene">
-                    <picture>
-                        <img src="./bilder/dressmann.jpg" alt="BildeProdukt 1">
-                    </picture>
-                    <picture>
-                        <img src="./bilder/dressmann.jpg" alt="BildeProdukt 2 ">
-                    </picture>
-                    <picture>
-                        <img src="./bilder/dressmann.jpg" alt="BildeProdukt 3">
-                    </picture>
-                </aside>
-                <picture class="hovedbilde">
-                    <img src="./bilder/dressmann.jpg" alt="BildeProdukt hoved">
-                </picture>
-            </div>
-            <section id="produkt-info">
-                <h3>Louis Vuitton - Silke Dress</h3>
-                <a href="#"><h4>Louis Vuitton</h4></a>
-                <p>8 999 kr inkl. mva.</p>
-                <p>Farge: Svart</p>
-            </section>
+      </header>
+      <main id="produkt-siden">
+        <nav class="brodsmule-sti">
+          <a href="#">Hjem</a>
+          <a href="#">Kategori</a>
+          <a href="#" aria-current="page">Produktnavn</a>
         </nav>
-    </main>
-</body>
+        <div class="flex-wrap">
+          <figure class="produkt-bildene">
+            <aside class="smabilder">
+              <img
+                src="./bilder/dressmann.jpg"
+                alt="Wedding dress view 1"
+                loading="lazy"
+              />
+              <img
+                src="./bilder/dressmann.jpg"
+                alt="Wedding dress view 2"
+                loading="lazy"
+              />
+              <img
+                src="./bilder/dressmann.jpg"
+                alt="Wedding dress view 3"
+                loading="lazy"
+              />
+            </aside>
+            <figure class="hoved-bilde">
+              <img
+                src="./bilder/dressmann.jpg"
+                alt="Beige wedding dress on mannequin"
+              />
+            </figure>
+          </figure>
+
+          <section class="produkt-info">
+            <h1>Produktnavn</h1>
+            <a href="#" class="merke">MERKENAVN</a>
+            <p class="pris">5 195 kr inkl. mva.</p>
+            <p>Farge: beige</p>
+
+            <form>
+              <label for="size">Velg størrelse</label>
+              <select id="size" name="size" required>
+                <option value="">Velg størrelse</option>
+                <option value="xs">XS</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+              </select>
+
+              <div class="valg">
+                <button type="submit" class="legg-til-handlekurv">
+                  Legg i handlekurv
+                </button>
+                <button
+                  type="button"
+                  class="onskeliste"
+                  aria-label="Add to wishlist"
+                >
+                  ♡
+                </button>
+              </div>
+            </form>
+
+            <details>
+              <summary>Matriale og vedlikehold</summary>
+              <p>Product material and care information goes here.</p>
+            </details>
+
+            <details>
+              <summary>Produktdetaljer</summary>
+              <p>Product details go here.</p>
+            </details>
+
+            <details>
+              <summary>Størrelsestablell</summary>
+              <p>Size chart goes here.</p>
+            </details>
+
+            <details>
+              <summary id="anmeldelser-produkt">
+                Anmeldelser
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </summary>
+              <article id="stjerne-produkt">
+                <h5>Robert Lasdodel</h5>
+                <p>2024 - 11 - 05</p>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </li>
+                </ul>
+                <p>
+                  Vivamus et gravida quam. Quisque in nulla gravida magna
+                  bibendum molestie.
+                </p>
+              </article>
+            </details>
+          </section>
+        </div>
+        <div id="produktene-overflow">
+          <article class="product-card-overflow">
+            <picture>
+              <!-- Photo by <a href="https://unsplash.com/@dominostudio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Domino Studio</a> on <a href="https://unsplash.com/photos/unpaired-red-nike-sneaker-164_6wVEHfI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+              <source
+                media="(max-width:400px)"
+                srcset="Nettside/bilder/skobilde.png"
+              />
+              <img src="bilder/skobilde.jpg" alt="Sko" class="skobilde" />
+            </picture>
+            <header>
+              <a href="#"><h3>Nike - ZoomFly</h3></a>
+              <p>Kr 1299</p>
+            </header>
+            <footer class="reviews">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <h4>842 Reviews</h4>
+            </footer>
+          </article>
+          <article class="product-card-overflow">
+            <picture>
+              <!-- Photo by <a href="https://unsplash.com/@dominostudio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Domino Studio</a> on <a href="https://unsplash.com/photos/unpaired-red-nike-sneaker-164_6wVEHfI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+              <source
+                media="(max-width:400px)"
+                srcset="Nettside/bilder/skobilde.png"
+              />
+              <img src="bilder/skobilde.jpg" alt="Sko" class="skobilde" />
+            </picture>
+            <header>
+              <a href="#"><h3>Nike - ZoomFly</h3></a>
+              <p>Kr 1299</p>
+            </header>
+            <footer class="reviews">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <h4>842 Reviews</h4>
+            </footer>
+          </article>
+          <article class="product-card-overflow">
+            <picture>
+              <!-- Photo by <a href="https://unsplash.com/@dominostudio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Domino Studio</a> on <a href="https://unsplash.com/photos/unpaired-red-nike-sneaker-164_6wVEHfI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+              <source
+                media="(max-width:400px)"
+                srcset="Nettside/bilder/skobilde.png"
+              />
+              <img src="bilder/skobilde.jpg" alt="Sko" class="skobilde" />
+            </picture>
+            <header>
+              <a href="#"><h3>Nike - ZoomFly</h3></a>
+              <p>Kr 1299</p>
+            </header>
+            <footer class="reviews">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <h4>842 Reviews</h4>
+            </footer>
+          </article>
+          <article class="product-card-overflow">
+            <picture>
+              <!-- Photo by <a href="https://unsplash.com/@dominostudio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Domino Studio</a> on <a href="https://unsplash.com/photos/unpaired-red-nike-sneaker-164_6wVEHfI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+              <source
+                media="(max-width:400px)"
+                srcset="Nettside/bilder/skobilde.png"
+              />
+              <img src="bilder/skobilde.jpg" alt="Sko" class="skobilde" />
+            </picture>
+            <header>
+              <a href="#"><h3>Nike - ZoomFly</h3></a>
+              <p>Kr 1299</p>
+            </header>
+            <footer class="reviews">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <h4>842 Reviews</h4>
+            </footer>
+          </article>
+          <article class="product-card-overflow">
+            <picture>
+              <!-- Photo by <a href="https://unsplash.com/@dominostudio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Domino Studio</a> on <a href="https://unsplash.com/photos/unpaired-red-nike-sneaker-164_6wVEHfI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+              <source
+                media="(max-width:400px)"
+                srcset="Nettside/bilder/skobilde.png"
+              />
+              <img src="bilder/skobilde.jpg" alt="Sko" class="skobilde" />
+            </picture>
+            <header>
+              <a href="#"><h3>Nike - ZoomFly</h3></a>
+              <p>Kr 1299</p>
+            </header>
+            <footer class="reviews">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <h4>842 Reviews</h4>
+            </footer>
+          </article>
+          <article class="product-card-overflow">
+            <picture>
+              <!-- Photo by <a href="https://unsplash.com/@dominostudio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Domino Studio</a> on <a href="https://unsplash.com/photos/unpaired-red-nike-sneaker-164_6wVEHfI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+              <source
+                media="(max-width:400px)"
+                srcset="Nettside/bilder/skobilde.png"
+              />
+              <img src="bilder/skobilde.jpg" alt="Sko" class="skobilde" />
+            </picture>
+            <header>
+              <a href="#"><h3>Nike - ZoomFly</h3></a>
+              <p>Kr 1299</p>
+            </header>
+            <footer class="reviews">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <h4>842 Reviews</h4>
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>

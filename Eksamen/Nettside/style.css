@@ -1,587 +1,745 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+:root {
+  --maxbredde: 1200px;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
 }
 /* Mobile-First */
 /* Headeren */
-#global-header{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    text-decoration: none;
-    margin: 1rem;
+#global-header {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+  margin: 1rem;
 }
 
-#search{
-    margin: 1rem;
-    align-items: center;
-    position: relative;
+#search {
+  margin: 1rem;
+  align-items: center;
+  position: relative;
 }
 
-#search input{
-    border-radius: 30px;
-    padding: 0.5rem 1rem;
+#search input {
+  border-radius: 30px;
+  padding: 0.5rem 1rem;
 }
 
-#search label{
-    position: absolute;
-    right: 15px;
-    bottom: 7px
+#search label {
+  position: absolute;
+  right: 15px;
+  bottom: 7px;
 }
 
-
-#global-header .navbar ul{
-    list-style: none;
+#global-header .navbar ul {
+  list-style: none;
 }
 
-#global-header .navbar ul li{
-    text-align: center;
-    padding: 0.5rem;
+#global-header .navbar ul li {
+  text-align: center;
+  padding: 0.5rem;
 }
 
-#global-header .navbar ul li a{
-    text-decoration: none;
-    color: black;
+#global-header .navbar ul li a {
+  text-decoration: none;
+  color: black;
 }
 
-#icons-hoyre i{
-    padding: 0.3rem;
-    margin-top: 0.5rem;
-    color: black;
+#icons-hoyre i {
+  padding: 0.3rem;
+  margin-top: 0.5rem;
+  color: black;
 }
 
-.logo-header{
-    width: 100px;
+.logo-header {
+  width: 100px;
 }
 
 /* Banneren/SlideShow */
 
-.banner{
-    position: relative;
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    overflow: hidden;
+.banner {
+  position: relative;
+  width: 100%;
+  max-width: var(--maxbredde);
+  margin: auto;
+  overflow: hidden;
 }
 
+.slide figure {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100%;
+  text-align: right;
+  padding: 15px;
+}
 
-/* input[type='radio']{
-    display: none;
-} */
+.slide h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
 
-/* .sliderne{
+.slide p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.les-mer {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  color: #000;
+  font-size: 1rem;
+  padding: 0.5rem 0.7rem;
+}
+
+.slide,
+.slide-desktop {
+  padding: 5rem 10rem;
+  border-radius: 20px;
+  height: 100%;
+  margin: 10px;
+  background-image: url(https://picsum.photos/id/26/500/500);
+}
+
+.slide-desktop {
+  display: none;
+}
+/* .slider2{
+    background-image: url(https://picsum.photos/id/27/500/500);
+}
+
+.slider3{
+    background-image: url(https://picsum.photos/id/26/500/500);
+}   */
+
+/* Våre mest populære produkter Seksjon */
+
+#popular-products {
+  display: grid;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+#popular-products h2 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+#popular-products p {
+  display: grid;
+  align-content: center;
+  padding: 1rem;
+  margin: 0 4rem;
+}
+
+#knapper-produkter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.knapper-prod {
+  border-radius: 50px;
+  border: 0.3px solid black;
+  color: #000000;
+  font-size: 1rem;
+  padding: 1.5rem 1rem;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+#svart-knapp {
+  background-color: #353333;
+  color: #fff;
+}
+
+/* -----Populære produkter */
+
+.product-card {
+  margin: 0.1rem;
+  align-content: center;
+  padding: 0 0 2rem;
+}
+
+.skobilde {
+  display: flex;
+  max-width: 100%;
+  height: 100%;
+  align-content: center;
+  padding: 0.5rem;
+  margin: auto;
+  border-radius: 50px;
+}
+
+article a {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  flex-direction: row;
+}
+
+article p {
+  margin: 0 1rem;
+}
+
+article header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px 15px;
+}
+
+.reviews {
+  display: flex;
+  margin: 0 8px;
+}
+
+.reviews i {
+  padding: 0.2rem;
+}
+
+.reviews h4 {
+  padding: 0.2rem;
+}
+
+/* poplære kategorier */
+
+#tekst-boks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 2rem;
+  padding: 0 0 1rem;
+}
+
+#popular-kategorier {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+#kategori1 {
+  /* Bildet er tatt av <a href="https://pixabay.com/no/users/darkmoon_art-1664300/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=9042354">Dorothe</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=9042354">Pixabay</a> */
+  background-image: url(../Nettside/bilder/Julee.jpg);
+  background-size: 450px 350px;
+}
+
+#kategori2 {
+  /* Bildet er tatt av <a href="https://pixabay.com/no/users/jarmoluk-143740/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=428607">Michal Jarmoluk</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=428607">Pixabay</a> */
+  background-image: url(../Nettside/bilder/golf.jpg);
+  background-size: 450px 350px;
+}
+
+#kategori3 {
+  /* Bildet er tatt av <a href="https://pixabay.com/no/users/pexels-2286921/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1866619">Pexels</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1866619">Pixabay</a> */
+  background-image: url(../Nettside/bilder/accessories.jpg);
+  background-size: 400px 400px;
+  padding: 10rem;
+}
+
+#kategori4 {
+  /* Bildet er tatt av <a href="https://pixabay.com/no/users/alba1970-29824635/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8293794">alba1970</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8293794">Pixabay</a> */
+  background-image: url(../Nettside/bilder/ball.jpg);
+  background-size: 450px 350px;
+}
+
+#kategori5 {
+  /* Bildet er tatt av <a href="https://pixabay.com/no/users/jupilu-9196359/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7061815">Jupi Lu</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7061815">Pixabay</a> */
+  background-image: url(../Nettside/bilder/streetwar.jpg);
+  background-size: 450px 320px;
+}
+
+.kort {
+  padding: 9rem;
+  margin: 0.5rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.kort h3 {
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Produkt-Anmeldelser */
+#anmeldelser h2 {
+  padding: 1rem;
+}
+#anmeldelser article {
+  max-width: 350px;
+  min-width: 300px;
+  width: 100px;
+  margin: 0 1rem;
+  box-shadow: 15px 10px 10px 0px #e9e3e3;
+  border-radius: 10px;
+  border: 1px solid #ddd5d5;
+}
+
+#anmeldelser-boks {
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+  overflow: scroll;
+}
+
+#anmeldelser article img {
+  max-width: 100px;
+  border-radius: 50%;
+  margin: 1rem;
+}
+
+#anmeldelser h3 {
+  padding: 0 1rem 1rem;
+}
+
+#anmeldelser ul li {
+  margin: 0 1rem;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Footer */
+
+#ingress {
+  margin: 0.5rem;
+  text-decoration: none;
+  list-style: none;
+  padding: 0 0 1.5rem;
+}
+
+#kontakt h4 {
+  margin: 0.5rem;
+}
+
+.informasjon {
+  display: flex;
+  gap: 1rem;
+  margin: 0.5rem;
+  font-size: 15px;
+}
+
+#snarveier {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.5rem;
+}
+
+#snarveier ul {
+  list-style: none;
+}
+
+#snarveier ul li a {
+  color: black;
+  text-decoration: none;
+  list-style: none;
+  font-size: 15px;
+}
+
+#sosiale-medier {
+  margin: 0.5rem;
+}
+
+#sosiale-medier h4 {
+  padding: 0 0 1rem;
+}
+
+/* ProduktSiden */
+
+.brodsmule-sti {
+  padding: 1rem;
+  color: #666;
+}
+
+.brodsmule-sti a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.brodsmule-sti a:not(:last-child)::after {
+  content: ">";
+  margin: 0 0.5rem;
+}
+
+/* Bilde i produktsiden */
+
+#produkt-siden {
+  padding: 1rem;
+}
+
+.produkt-bildene {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.smabilder {
+  order: 2;
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+.smabilder img {
+  width: 80px;
+  height: 120px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.hoved-bilde {
+  order: 1;
+}
+
+.hoved-bilde img {
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: cover;
+}
+
+/* Produkt stil */
+
+.produkt-info {
+  padding: 1rem;
+  flex: 1;
+  max-width: 500px;
+}
+
+.produkt-info h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.merke {
+  color: #666;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.pris {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+}
+
+/* Former elementer */
+select {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 1rem 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.valg {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+button {
+  padding: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.legg-til-handlekurv {
+  flex: 1;
+  background: #000;
+  color: white;
+}
+
+.onskeliste {
+  background: white;
+  border: 1px solid #ddd;
+  width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Accordion sections */
+details {
+  border-top: 1px solid #ddd;
+  padding: 1rem 0;
+}
+
+summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+summary::after {
+  content: "+";
+  font-size: 1.2rem;
+}
+
+details[open] summary::after {
+  content: "-";
+}
+
+#anmeldelser-produkt li {
+  list-style: none;
+  text-decoration: none;
+}
+
+#stjerne-produkt {
+  padding: 1rem;
+  border: 1px solid;
+  border-radius: 1rem;
+}
+
+#stjerne-produkt h5 {
+  padding: 1rem;
+}
+
+#stjerne-produkt li {
+  list-style: none;
+  text-decoration: none;
+  margin: 1rem;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.justify-between {
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+#produktene-overflow {
+  display: flex;
+  max-width: var(--maxbredde);
+  align-items: center;
+  overflow: auto;
+}
+
+.product-card-overflow {
+  max-width: 350px;
+  padding-right: 0.5rem;
+}
+
+/* --------------Desktop--------------- */
+@media (min-width: 768px) {
+  #flex-container {
+    max-width: var(--maxbredde);
+    margin: 0 auto;
+  }
+  #global-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #global-header .navbar ul {
+    display: flex;
+  }
+
+  #global-header .navbar ul li {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+  }
+
+  /* Banner */
+
+  .banner {
+    display: flex;
     position: relative;
     width: 100%;
-    
-} */
- 
+    max-width: var(--maxbredde);
+    margin: auto;
+    overflow: auto;
+  }
 
-.slide figure{
+  .slide-desktop {
+    display: block;
+  }
+
+  .slide,
+  .slide-desktop {
+    flex-shrink: 0;
+    width: 1100px;
+  }
+
+  .slide-desktop figure {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     height: 100%;
     text-align: right;
     padding: 15px;
-}
+  }
 
-
-.slide h2{
+  .slide-desktop h2 {
     font-size: 2rem;
     margin-bottom: 10px;
-}
+  }
 
-.slide p{
+  .slide-desktop p {
     font-size: 1rem;
     margin-bottom: 15px;
-}
+  }
+  /* Populare produkter */
 
-.les-mer{
-    padding: 10px 20px;
-    border-radius: 20px;
-    border: none;
-    color: #000;
-    font-size: 1rem;
-    padding: 0.5rem 0.7rem;
-}
-
-.slide{
-    padding: 5rem 10rem;
-    border-radius: 20px;
-    height: 100%;
-    margin: 10px;
-}
-
-/* .slide, figure, figcaption{
+  #produktene {
     display: flex;
-} */
-
-#slider1{
-    background-image: url(https://picsum.photos/id/26/500/500);
-}
-
-/* #slider2{
-    background-image: url(https://picsum.photos/id/27/500/500);
-}
-
-#slider3{
-    background-image: url(https://picsum.photos/id/26/500/500);
-}  */
-
-
-/* Våre mest populære produkter Seksjon */
-
-#popular-products{
-    display: grid;
-    max-width: 100%;
+    flex-wrap: wrap;
+    max-width: var(--maxbredde);
     justify-content: center;
     align-items: center;
-    align-content: center;
-}
+  }
 
-#popular-products h2{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-
-#popular-products p{
-    display: grid;
-    align-content: center;
+  #popular-products h2 {
+    font-size: 40px;
     padding: 1rem;
-    margin: 0 4rem;
-}
+  }
 
-#knapper-produkter{
-    display: flex;
-    justify-content: space-between;
-}
-
-.knapper-prod{
-    border-radius: 50px;
-    border: 0.3px solid black;
-    color: #000000;
-    font-size: 1rem;
-    padding: 1.5rem 1rem;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-}
-
-#svart-knapp{
-    background-color: #353333;
-    color: #fff;
-}
-
-
-
-
-
-
-
-/* -----Populære produkter */
-
-.product-card{
-    margin: 0.1rem;
-    align-content: center;
-    padding: 0 0 2rem;
-}
-
-.skobilde{
-    display: flex;
-    max-width: 100%;
-    height: 100%;
-    align-content: center;
-    padding: 0.5rem;
-    margin: auto;
-    border-radius: 50px;
-}
-
-article a{
-    text-decoration: none;
-    list-style: none;
-    color: black;
-    flex-direction: row;
-}
-
-article p{
-    margin: 0 1rem;
-}
-
-article header{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 10px 15px;
-}
-
-.reviews{
-    display: flex;
-    margin: 0 8px;
-}
-
-.reviews i{
-    padding: 0.2rem;
-}
-
-.reviews h4{
-    padding: 0.2rem;
-}
-
-/* poplære kategorier */
-
-#tekst-boks{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 0 2rem;
-    padding: 0 0 1rem;
-
-
-}
-
-#popular-kategorier{
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-}
-
-#kategori1{
-    /* Bildet er tatt av <a href="https://pixabay.com/no/users/darkmoon_art-1664300/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=9042354">Dorothe</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=9042354">Pixabay</a> */
-    background-image: url(../Nettside/bilder/Julee.jpg);
-    background-size: 450px 350px;
-}
-
-#kategori2{
-    /* Bildet er tatt av <a href="https://pixabay.com/no/users/jarmoluk-143740/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=428607">Michal Jarmoluk</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=428607">Pixabay</a> */
-    background-image: url(../Nettside/bilder/golf.jpg);
-    background-size: 450px 350px;
-}
-
-#kategori3{
-    /* Bildet er tatt av <a href="https://pixabay.com/no/users/pexels-2286921/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1866619">Pexels</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1866619">Pixabay</a> */
-    background-image: url(../Nettside/bilder/accessories.jpg);
-    background-size: 400px 400px;
-    padding: 10rem;
-}
-
-#kategori4{
-    /* Bildet er tatt av <a href="https://pixabay.com/no/users/alba1970-29824635/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8293794">alba1970</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8293794">Pixabay</a> */
-    background-image: url(../Nettside/bilder/ball.jpg);
-    background-size: 450px 350px;
-}
-
-#kategori5{
-    /* Bildet er tatt av <a href="https://pixabay.com/no/users/jupilu-9196359/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7061815">Jupi Lu</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7061815">Pixabay</a> */
-    background-image: url(../Nettside/bilder/streetwar.jpg);
-    background-size: 450px 320px;
-}
-
-.kort {
-    padding: 9rem;
-    margin: 0.5rem;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-}
-
-.kort h3{
-    color: white;
+  #popular-products p {
     font-size: 20px;
-    display: flex;
     align-items: center;
     justify-content: center;
-}
-
-/* Produkt-Anmeldelser */
-#anmeldelser h2{
     padding: 1rem;
-}
-#anmeldelser article{
+  }
+
+  .product-card {
     max-width: 350px;
-    min-width: 300px;
-    width: 100px;
-    margin: 0 1rem;
-    box-shadow: 15px 10px 10px 0px #e9e3e3; 
-    border-radius: 10px;
-    border: 1px solid #ddd5d5;
-}
+    padding: 2rem;
+    justify-content: space-between;
+  }
 
-#anmeldelser-boks{
-    display: flex;
-    flex-direction: row;
-    height: 500px;
-    overflow: scroll;
-}
+  .skobilde {
+    border-radius: 30px;
+  }
 
-#anmeldelser article img {
-    max-width: 100px;
-    border-radius: 50%;
-    margin: 1rem;
-}
+  #tekst-boks {
+    padding: 5rem;
+  }
 
-#anmeldelser h3{
-    padding: 0 1rem 1rem;
-}
+  #tekst-boks h2 {
+    font-size: 40px;
+  }
+  /* Populære kategorier */
+  #tekst-boks p {
+    font-size: 20px;
+    padding: 1.5rem;
+  }
 
-#anmeldelser ul li{
-    margin: 0 1rem;
-    text-decoration: none;
-    list-style: none;
-}
-
-
-
-
-/* Footer */
-
-#display-grid{
+  #kategori-grid {
     display: grid;
-    grid-template-columns: auto auto auto;
-}
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 3fr 3fr 3fr;
+  }
 
+  #kategori1 {
+    grid-area: 1/1/1/1;
+    max-width: 386px;
+  }
 
+  #kategori2 {
+    grid-area: 1/2/2/3;
+    max-width: 386px;
+  }
 
-#ingress{
-    margin: 0.5rem;
-    text-decoration: none;
+  #kategori3 {
+    max-width: 864px;
+    grid-area: 1/3/3/4;
+  }
+
+  #kategori4 {
+    grid-area: 2/1/4/3;
+    max-width: 864px;
+    background-size: 700px 800px;
+  }
+
+  #kategori5 {
+    grid-area: 3/3/3/3;
+  }
+
+  /* Anmeldelser */
+
+  #anmeldelser article {
+    max-width: 289px;
+    min-height: 289px;
+  }
+
+  /* Ingress */
+  #ingress ul li {
     list-style: none;
-    padding: 0 0 1.5rem;
-}
+  }
 
-#kontakt h4{
-    margin: 0.5rem;
-}
-
-.informasjon{
+  footer #kontakt #snarveier #sosiale-medier {
     display: flex;
-    gap: 1rem;
-    margin: 0.5rem;
-    font-size: 15px;
-}
+  }
 
-
-#snarveier{
-    display: flex;
-    justify-content: flex-end;
-    margin: 0.5rem;
-}
-
-#snarveier ul{
-    list-style: none;
-}
-
-#snarveier ul li a{
-    color: black;
-    text-decoration: none;
-    list-style: none;
-    font-size: 15px;
-}
-
-#sosiale-medier{
-    margin: 0.5rem;
-}
-
-#sosiale-medier h4{
-    padding:  0 0 1rem;
-}
-
-/* ProduktSiden */
-
-#brodsmulestil{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    text-decoration: none;
-    padding: 1.8rem 0;
-}
-
-#brodsmulestil a{
-    text-decoration: none;
-    padding: 0.3rem;
-    color: #000;
-} 
-
-/* Bilde i produktsiden */
-
-#bilde-produkt{
-    display: flex;
-    margin: 1rem;
-}
-
-.side-bildene{
+  /* Produktsiden */
+  #produkt-siden {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    
+    gap: 2rem;
+    padding: 2rem;
+    max-width: var(--maxbredde);
+    margin: 0 auto;
+  }
+
+  .produkt-bildene {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+  }
+
+  .smabilder {
+    display: flex;
+    order: 1;
+    flex-direction: column;
+    overflow: auto;
+    max-height: 600px;
+    width: 100px;
+  }
+
+  .hoved-bilde {
+    order: 2;
+  }
+
+  .produkt-info {
+    padding: 0 1rem;
+  }
+
+  .produkt-info h1 {
+    font-size: 2rem;
+  }
+
+  .smabilder img {
+    flex: 1;
+    width: 100%;
+  }
 }
-
-.hovedbilde {
-    margin-left: 10px;
-}
-
-.hovedbilde img{
-    max-width: 300px;
-    max-height: 500px;
-}
-
-#bilde-produkt .side-bildene picture img{
-    max-width: 300px;
-    max-height: 140px;
-}
-
-#produkt-info{
-    margin: 1rem;
-    
-}
-
-#produkt-info h3{
-    padding: 0 0 1rem;
-}
-
-#produkt-info a h4{
-    padding: 0 0 0.5rem;
-    color: #948787;
-
-}
-
-#produkt-info p{
-    padding: 0 0 1rem;
-
-}
-
-
-
-
-
-
-
-
-/* Desktop */
-@media (min-width: 768px) {
-    #flex-container{
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-    #global-header {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    #global-header .navbar ul {
-        display: flex;
-    }
-
-    #global-header .navbar ul li {
-        display: flex;
-        align-items: center;
-        margin: 0 10px;
-    }
-/* Populare produkter */
-
-    
-    #produktene{
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 1200px;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #popular-products h2{
-        font-size: 40px;
-        padding: 1rem;
-    }
-
-    #popular-products p{
-        font-size: 20px;
-        align-items: center;
-        justify-content: center;
-        padding: 1rem;
-    }
-
-
-    .product-card{
-        max-width: 350px;
-        padding: 2rem;
-        justify-content: space-between;
-        
-    }
-
-    .skobilde{
-        border-radius: 30px;
-    }
-
-    #tekst-boks{
-        padding: 5rem;
-    }
-    
-    #tekst-boks h2{
-        font-size: 40px;
-    }
-    /* Populære kategorier */
-    #tekst-boks p{
-        font-size: 20px;
-        padding: 1.5rem;
-    }
-
-    #kategori-grid{
-        display: grid;
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-columns: 3fr 3fr 3fr;
-    }
-
-    #kategori1{
-        grid-area: 1/1/1/1;
-        max-width: 386px;
-    }
-
-    #kategori2{
-        grid-area: 1/2/2/3;
-        max-width: 386px;
-    }
-
-    #kategori3{
-        max-width: 864px;
-        grid-area: 1/3/3/4;
-    }
-
-    #kategori4{
-        grid-area: 2/1/4/3;
-        max-width: 864px;
-        background-size: 700px 800px;
-    }
-
-    #kategori5{
-        grid-area: 3/3/3/3;
-        
-    }
-
-    /* Anmeldelser */
-
-    #anmeldelser article{
-        max-width: 289px;
-        min-height: 289px;
-    }
-
-    /* Ingress */
-    #ingress ul li{
-        list-style: none;
-    }
-
-    footer #kontakt #snarveier #sosiale-medier{
-        display: flex;
-    }
-}
-

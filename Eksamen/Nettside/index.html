@@ -1,333 +1,428 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="icons/css/fontawesome.css" rel="stylesheet">
-    <link href="icons/css/brands.css" rel="stylesheet">
-    <link href="icons/css/all.css" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="icons/css/fontawesome.css" rel="stylesheet" />
+    <link href="icons/css/brands.css" rel="stylesheet" />
+    <link href="icons/css/all.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forsiden</title>
-</head>
-<body>
-<div id="flex-container">
-        <header id="global-header">
-            <form id="search">
-                    <input type="search" placeholder="Søk her" id="søkefelt">
-                    <label class="search"><i class="fa-solid fa-magnifying-glass"></i></label>
-            </form>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="index.html">Hjem</a></li>
-                    <li><a href="produkt.html">Produkter</a></li>
-                    <li><a href="index.html"><img src="./bilder/logo.png" alt="Nettside logo" class="logo-header"></a></li>
-                    <li><a href="#">Kategorier</a></li>
-                    <li><a href="#">Kontakt oss</a></li>
-                </ul>
-            </nav>
-            <label id="icons-hoyre">
-                <i class="fa-regular fa-user"></i>
-                <i class="fa-regular fa-heart"></i>
-                <a href="handlekurv.html"><i class="fa-solid fa-cart-shopping"></i></a>
-            </label>
-        </header>
-<main>
-<!-- Banneren -->
-    <section class="banner">
-        <article class="slide" id="slider1">
+  </head>
+  <body>
+    <div id="flex-container">
+      <header id="global-header">
+        <form id="search">
+          <input type="search" placeholder="Søk her" id="søkefelt" />
+          <label class="search"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></label>
+        </form>
+        <nav class="navbar">
+          <ul>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="produkt.html">Produkter</a></li>
+            <li>
+              <a href="index.html"
+                ><img
+                  src="./bilder/logo.png"
+                  alt="Nettside logo"
+                  class="logo-header"
+              /></a>
+            </li>
+            <li><a href="#">Kategorier</a></li>
+            <li><a href="#">Kontakt oss</a></li>
+          </ul>
+        </nav>
+        <label id="icons-hoyre">
+          <i class="fa-regular fa-user"></i>
+          <i class="fa-regular fa-heart"></i>
+          <a href="handlekurv.html"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
+        </label>
+      </header>
+      <main>
+        <!-- Banneren -->
+        <section class="banner">
+          <article class="slide">
             <figure>
-                <figcaption>
-                    <h2>Lorem ipsum dolor sit amet, consectetur.</h2>
-                    <p>Mauris nec convallis ligula. Praesent in magna lectus. Pellentesque quis erat ut lectus iaculis pharetra eget eget nisl</p>
-                    <footer>
-                    <button class="les-mer">Les mer</button>
-                    </footer>
-                </figcaption>
+              <figcaption>
+                <h2>Lorem ipsum dolor sit amet, consectetur.</h2>
+                <p>
+                  Mauris nec convallis ligula. Praesent in magna lectus.
+                  Pellentesque quis erat ut lectus iaculis pharetra eget eget
+                  nisl
+                </p>
+                <footer>
+                  <button class="les-mer">Les mer</button>
+                </footer>
+              </figcaption>
             </figure>
-        </article>
-    </section>
-
- 
-        <section id="popular-products">
-                <h2>Våre meste populære produkter</h2>
-                <p>Oppdag det beste av det beste</p>
-                <form id="knapper-produkter">
-                    <button id="svart-knapp" class="knapper-prod">New Product</button>
-                    <button class="knapper-prod">Special Price</button>
-                    <button class="knapper-prod">Best sellers</button>
-
-                </form>
+          </article>
+          <article class="slide-desktop">
+            <figure>
+              <figcaption>
+                <h2>Lorem ipsum dolor sit amet, consectetur.</h2>
+                <p>
+                  Mauris nec convallis ligula. Praesent in magna lectus.
+                  Pellentesque quis erat ut lectus iaculis pharetra eget eget
+                  nisl
+                </p>
+                <footer>
+                  <button class="les-mer">Les mer</button>
+                </footer>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="slide-desktop">
+            <figure>
+              <figcaption>
+                <h2>Lorem ipsum dolor sit amet, consectetur.</h2>
+                <p>
+                  Mauris nec convallis ligula. Praesent in magna lectus.
+                  Pellentesque quis erat ut lectus iaculis pharetra eget eget
+                  nisl
+                </p>
+                <footer>
+                  <button class="les-mer">Les mer</button>
+                </footer>
+              </figcaption>
+            </figure>
+          </article>
         </section>
-            
+
+        <section id="popular-products">
+          <h2>Våre meste populære produkter</h2>
+          <p>Oppdag det beste av det beste</p>
+          <form id="knapper-produkter">
+            <button id="svart-knapp" class="knapper-prod">New Product</button>
+            <button class="knapper-prod">Special Price</button>
+            <button class="knapper-prod">Best sellers</button>
+          </form>
+        </section>
+
         <div id="produktene">
-            <article class="product-card">
-                <picture>
-                    <!-- Photo by <a href="https://unsplash.com/@dominostudio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Domino Studio</a> on <a href="https://unsplash.com/photos/unpaired-red-nike-sneaker-164_6wVEHfI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
-                    <source media="(max-width:400px)" srcset="Nettside/bilder/skobilde.png">
-                    <img src="bilder/skobilde.jpg" alt="Sko" class="skobilde">
-                </picture>
-                    <header>
-                        <a href="#"><h3>Nike - ZoomFly</h3></a> 
-                        <p>Kr 1299</p>
-                    </header>
-                    <footer class="reviews">
-                        <i class="fa-solid fa-star"></i> 
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <h4>842 Reviews</h4>
-                    </footer>
-            </article>
-            <article class="product-card">
-                <picture>
-                    <!-- Photo by <a href="https://unsplash.com/@dominostudio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Domino Studio</a> on <a href="https://unsplash.com/photos/unpaired-red-nike-sneaker-164_6wVEHfI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
-                    <source media="(max-width:400px)" srcset="Nettside/bilder/skobilde.png">
-                    <img src="bilder/skobilde.jpg" alt="Sko" class="skobilde">
-                </picture>
-                    <header>
-                        <a href="#"><h3>Nike - ZoomFly</h3></a> 
-                        <p>Kr 1299</p>
-                    </header>
-                    <footer class="reviews">
-                        <i class="fa-solid fa-star"></i> 
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <h4>842 Reviews</h4>
-                    </footer>
-            </article>
-            <article class="product-card">
-                <picture>
-                    <!-- Photo by <a href="https://unsplash.com/@dominostudio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Domino Studio</a> on <a href="https://unsplash.com/photos/unpaired-red-nike-sneaker-164_6wVEHfI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
-                    <source media="(max-width:400px)" srcset="Nettside/bilder/skobilde.png">
-                    <img src="bilder/skobilde.jpg" alt="Sko" class="skobilde">
-                </picture>
-                    <header>
-                        <a href="#"><h3>Nike - ZoomFly</h3></a> 
-                        <p>Kr 1299</p>
-                    </header>
-                    <footer class="reviews">
-                        <i class="fa-solid fa-star"></i> 
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <h4>842 Reviews</h4>
-                    </footer>
-            </article>
-            <article class="product-card">
-                <picture>
-                    <!-- Photo by <a href="https://unsplash.com/@dominostudio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Domino Studio</a> on <a href="https://unsplash.com/photos/unpaired-red-nike-sneaker-164_6wVEHfI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
-                    <source media="(max-width:400px)" srcset="Nettside/bilder/skobilde.png">
-                    <img src="bilder/skobilde.jpg" alt="Sko" class="skobilde">
-                </picture>
-                    <header>
-                        <a href="#"><h3>Nike - ZoomFly</h3></a> 
-                        <p>Kr 1299</p>
-                    </header>
-                    <footer class="reviews">
-                        <i class="fa-solid fa-star"></i> 
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <h4>842 Reviews</h4>
-                    </footer>
-            </article>
-            <article class="product-card">
-                <picture>
-                    <!-- Photo by <a href="https://unsplash.com/@dominostudio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Domino Studio</a> on <a href="https://unsplash.com/photos/unpaired-red-nike-sneaker-164_6wVEHfI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
-                    <source media="(max-width:400px)" srcset="Nettside/bilder/skobilde.png">
-                    <img src="bilder/skobilde.jpg" alt="Sko" class="skobilde">
-                </picture>
-                    <header>
-                        <a href="#"><h3>Nike - ZoomFly</h3></a> 
-                        <p>Kr 1299</p>
-                    </header>
-                    <footer class="reviews">
-                        <i class="fa-solid fa-star"></i> 
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <h4>842 Reviews</h4>
-                    </footer>
-            </article>
-            <article class="product-card">
-                <picture>
-                    <!-- Photo by <a href="https://unsplash.com/@dominostudio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Domino Studio</a> on <a href="https://unsplash.com/photos/unpaired-red-nike-sneaker-164_6wVEHfI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
-                    <source media="(max-width:400px)" srcset="Nettside/bilder/skobilde.png">
-                    <img src="bilder/skobilde.jpg" alt="Sko" class="skobilde">
-                </picture>
-                    <header>
-                        <a href="#"><h3>Nike - ZoomFly</h3></a> 
-                        <p>Kr 1299</p>
-                    </header>
-                    <footer class="reviews">
-                        <i class="fa-solid fa-star"></i> 
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <h4>842 Reviews</h4>
-                    </footer>
-            </article>
+          <article class="product-card">
+            <picture>
+              <!-- Photo by <a href="https://unsplash.com/@dominostudio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Domino Studio</a> on <a href="https://unsplash.com/photos/unpaired-red-nike-sneaker-164_6wVEHfI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+              <source
+                media="(max-width:400px)"
+                srcset="Nettside/bilder/skobilde.png"
+              />
+              <img src="bilder/skobilde.jpg" alt="Sko" class="skobilde" />
+            </picture>
+            <header>
+              <a href="#"><h3>Nike - ZoomFly</h3></a>
+              <p>Kr 1299</p>
+            </header>
+            <footer class="reviews">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <h4>842 Reviews</h4>
+            </footer>
+          </article>
+          <article class="product-card">
+            <picture>
+              <!-- Photo by <a href="https://unsplash.com/@dominostudio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Domino Studio</a> on <a href="https://unsplash.com/photos/unpaired-red-nike-sneaker-164_6wVEHfI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+              <source
+                media="(max-width:400px)"
+                srcset="Nettside/bilder/skobilde.png"
+              />
+              <img src="bilder/skobilde.jpg" alt="Sko" class="skobilde" />
+            </picture>
+            <header>
+              <a href="#"><h3>Nike - ZoomFly</h3></a>
+              <p>Kr 1299</p>
+            </header>
+            <footer class="reviews">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <h4>842 Reviews</h4>
+            </footer>
+          </article>
+          <article class="product-card">
+            <picture>
+              <!-- Photo by <a href="https://unsplash.com/@dominostudio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Domino Studio</a> on <a href="https://unsplash.com/photos/unpaired-red-nike-sneaker-164_6wVEHfI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+              <source
+                media="(max-width:400px)"
+                srcset="Nettside/bilder/skobilde.png"
+              />
+              <img src="bilder/skobilde.jpg" alt="Sko" class="skobilde" />
+            </picture>
+            <header>
+              <a href="#"><h3>Nike - ZoomFly</h3></a>
+              <p>Kr 1299</p>
+            </header>
+            <footer class="reviews">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <h4>842 Reviews</h4>
+            </footer>
+          </article>
+          <article class="product-card">
+            <picture>
+              <!-- Photo by <a href="https://unsplash.com/@dominostudio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Domino Studio</a> on <a href="https://unsplash.com/photos/unpaired-red-nike-sneaker-164_6wVEHfI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+              <source
+                media="(max-width:400px)"
+                srcset="Nettside/bilder/skobilde.png"
+              />
+              <img src="bilder/skobilde.jpg" alt="Sko" class="skobilde" />
+            </picture>
+            <header>
+              <a href="#"><h3>Nike - ZoomFly</h3></a>
+              <p>Kr 1299</p>
+            </header>
+            <footer class="reviews">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <h4>842 Reviews</h4>
+            </footer>
+          </article>
+          <article class="product-card">
+            <picture>
+              <!-- Photo by <a href="https://unsplash.com/@dominostudio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Domino Studio</a> on <a href="https://unsplash.com/photos/unpaired-red-nike-sneaker-164_6wVEHfI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+              <source
+                media="(max-width:400px)"
+                srcset="Nettside/bilder/skobilde.png"
+              />
+              <img src="bilder/skobilde.jpg" alt="Sko" class="skobilde" />
+            </picture>
+            <header>
+              <a href="#"><h3>Nike - ZoomFly</h3></a>
+              <p>Kr 1299</p>
+            </header>
+            <footer class="reviews">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <h4>842 Reviews</h4>
+            </footer>
+          </article>
+          <article class="product-card">
+            <picture>
+              <!-- Photo by <a href="https://unsplash.com/@dominostudio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Domino Studio</a> on <a href="https://unsplash.com/photos/unpaired-red-nike-sneaker-164_6wVEHfI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+              <source
+                media="(max-width:400px)"
+                srcset="Nettside/bilder/skobilde.png"
+              />
+              <img src="bilder/skobilde.jpg" alt="Sko" class="skobilde" />
+            </picture>
+            <header>
+              <a href="#"><h3>Nike - ZoomFly</h3></a>
+              <p>Kr 1299</p>
+            </header>
+            <footer class="reviews">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <h4>842 Reviews</h4>
+            </footer>
+          </article>
         </div>
-            
-            <section id="tekst-boks">
-                <h2>Våre mest populære Kategorier</h2>
-                <p>Oppdag det beste av oss</p>
-            </section>
-            <div id="kategori-grid">
-            <article class="kort" id="kategori1">
-                <h3>Christmas</h3>
-            </article>
 
-            <article class="kort" id="kategori2">
-                <h3>Golf</h3>
-            </article>
+        <section id="tekst-boks">
+          <h2>Våre mest populære Kategorier</h2>
+          <p>Oppdag det beste av oss</p>
+        </section>
+        <div id="kategori-grid">
+          <article class="kort" id="kategori1">
+            <h3>Christmas</h3>
+          </article>
 
-            <article class="kort" id="kategori3">
-                <h3>Accessories</h3>
-            </article>
+          <article class="kort" id="kategori2">
+            <h3>Golf</h3>
+          </article>
 
-            <article class="kort" id="kategori4">
-                <h3>Sport</h3>
-            </article>
+          <article class="kort" id="kategori3">
+            <h3>Accessories</h3>
+          </article>
 
-            <article class="kort" id="kategori5">
-                <h3>Streetwear</h3>
-            </article>
-            </div>
-            
+          <article class="kort" id="kategori4">
+            <h3>Sport</h3>
+          </article>
+
+          <article class="kort" id="kategori5">
+            <h3>Streetwear</h3>
+          </article>
+        </div>
 
         <section id="anmeldelser">
-            <h2>Anmeldelser</h2>
-            <div id="anmeldelser-boks">
-                <article class="produkt-anmeldelse">
-                   <img src="bilder/anmeldelse.jpg" alt="Produktanmeldelse"> 
-                   <h3>Aenean tellus</h3>
-                   <ul>
-                    <li>
-                        <i class="fa-solid fa-star"></i> 
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </li>
-                    </ul>
-                   <p>Sed consectetur nisi nec lorem ullamcorper varius. Nunc fermentum hendrerit sollicitudin. Quisque sit amet porttitor nunc, a porta orci. Maecenas consequat auctor quam, vitae viverra dolor molestie vitae. Praesent a quam in dolor lobortis porttitor. Nulla facilisi. Quisque non velit non eros faucibus consequat eu non ipsum.</p>
-                </article>
+          <h2>Anmeldelser</h2>
+          <div id="anmeldelser-boks">
+            <article class="produkt-anmeldelse">
+              <img src="bilder/anmeldelse.jpg" alt="Produktanmeldelse" />
+              <h3>Aenean tellus</h3>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </li>
+              </ul>
+              <p>
+                Sed consectetur nisi nec lorem ullamcorper varius. Nunc
+                fermentum hendrerit sollicitudin. Quisque sit amet porttitor
+                nunc, a porta orci. Maecenas consequat auctor quam, vitae
+                viverra dolor molestie vitae. Praesent a quam in dolor lobortis
+                porttitor. Nulla facilisi. Quisque non velit non eros faucibus
+                consequat eu non ipsum.
+              </p>
+            </article>
 
-                <article class="produkt-anmeldelse">
-                    <img src="bilder/anmeldelse.jpg" alt="Produktanmeldelse"> 
-                    <h3>Aenean tellus</h3>
-                    <ul>
-                     <li>
-                         <i class="fa-solid fa-star"></i> 
-                         <i class="fa-solid fa-star"></i>
-                         <i class="fa-solid fa-star"></i>
-                         <i class="fa-solid fa-star"></i>
-                         <i class="fa-regular fa-star"></i>
-                     </li>
-                     </ul>
-                    <p>Sed consectetur nisi nec lorem ullamcorper varius. Nunc fermentum hendrerit sollicitudin. Quisque sit amet porttitor nunc, a porta orci. Maecenas consequat auctor quam, vitae viverra dolor molestie vitae. Praesent a quam in dolor lobortis porttitor. Nulla facilisi. Quisque non velit non eros faucibus consequat eu non ipsum.</p>
-                 </article>
+            <article class="produkt-anmeldelse">
+              <img src="bilder/anmeldelse.jpg" alt="Produktanmeldelse" />
+              <h3>Aenean tellus</h3>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </li>
+              </ul>
+              <p>
+                Sed consectetur nisi nec lorem ullamcorper varius. Nunc
+                fermentum hendrerit sollicitudin. Quisque sit amet porttitor
+                nunc, a porta orci. Maecenas consequat auctor quam, vitae
+                viverra dolor molestie vitae. Praesent a quam in dolor lobortis
+                porttitor. Nulla facilisi. Quisque non velit non eros faucibus
+                consequat eu non ipsum.
+              </p>
+            </article>
 
+            <article class="produkt-anmeldelse">
+              <img src="bilder/anmeldelse.jpg" alt="Produktanmeldelse" />
+              <h3>Aenean tellus</h3>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </li>
+              </ul>
+              <p>
+                Sed consectetur nisi nec lorem ullamcorper varius. Nunc
+                fermentum hendrerit sollicitudin. Quisque sit amet porttitor
+                nunc, a porta orci. Maecenas consequat auctor quam, vitae
+                viverra dolor molestie vitae. Praesent a quam in dolor lobortis
+                porttitor. Nulla facilisi. Quisque non velit non eros faucibus
+                consequat eu non ipsum.
+              </p>
+            </article>
 
-                 <article class="produkt-anmeldelse">
-                    <img src="bilder/anmeldelse.jpg" alt="Produktanmeldelse"> 
-                    <h3>Aenean tellus</h3>
-                    <ul>
-                     <li>
-                         <i class="fa-solid fa-star"></i> 
-                         <i class="fa-solid fa-star"></i>
-                         <i class="fa-solid fa-star"></i>
-                         <i class="fa-solid fa-star"></i>
-                         <i class="fa-regular fa-star"></i>
-                     </li>
-                     </ul>
-                    <p>Sed consectetur nisi nec lorem ullamcorper varius. Nunc fermentum hendrerit sollicitudin. Quisque sit amet porttitor nunc, a porta orci. Maecenas consequat auctor quam, vitae viverra dolor molestie vitae. Praesent a quam in dolor lobortis porttitor. Nulla facilisi. Quisque non velit non eros faucibus consequat eu non ipsum.</p>
-                 </article>
-
-                 <article class="produkt-anmeldelse">
-                    <img src="bilder/anmeldelse.jpg" alt="Produktanmeldelse"> 
-                    <h3>Aenean tellus</h3>
-                    <ul>
-                     <li>
-                         <i class="fa-solid fa-star"></i> 
-                         <i class="fa-solid fa-star"></i>
-                         <i class="fa-solid fa-star"></i>
-                         <i class="fa-solid fa-star"></i>
-                         <i class="fa-regular fa-star"></i>
-                     </li>
-                     </ul>
-                    <p>Sed consectetur nisi nec lorem ullamcorper varius. Nunc fermentum hendrerit sollicitudin. Quisque sit amet porttitor nunc, a porta orci. Maecenas consequat auctor quam, vitae viverra dolor molestie vitae. Praesent a quam in dolor lobortis porttitor. Nulla facilisi. Quisque non velit non eros faucibus consequat eu non ipsum.</p>
-                 </article>
-
-        </div>
+            <article class="produkt-anmeldelse">
+              <img src="bilder/anmeldelse.jpg" alt="Produktanmeldelse" />
+              <h3>Aenean tellus</h3>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </li>
+              </ul>
+              <p>
+                Sed consectetur nisi nec lorem ullamcorper varius. Nunc
+                fermentum hendrerit sollicitudin. Quisque sit amet porttitor
+                nunc, a porta orci. Maecenas consequat auctor quam, vitae
+                viverra dolor molestie vitae. Praesent a quam in dolor lobortis
+                porttitor. Nulla facilisi. Quisque non velit non eros faucibus
+                consequat eu non ipsum.
+              </p>
+            </article>
+          </div>
         </section>
 
         <footer>
-            <nav id="ingress">
-                <ul>
-                    <li><a href="index.html"><img src="./bilder/logo.png" alt="Nettside logo" class="logo-header"></a></li>
-                </ul>
-                <p>
-                    Quisque mollis erat dolor, in lacinia arcu aliquam nec. dolor, in lacinia arcu aliquam nec. Suspendisse id sagittis tortor. 
-                </p>
-            </nav>
+          <nav id="ingress">
+            <ul>
+              <li>
+                <a href="index.html"
+                  ><img
+                    src="./bilder/logo.png"
+                    alt="Nettside logo"
+                    class="logo-header"
+                /></a>
+              </li>
+            </ul>
+            <p>
+              Quisque mollis erat dolor, in lacinia arcu aliquam nec. dolor, in
+              lacinia arcu aliquam nec. Suspendisse id sagittis tortor.
+            </p>
+          </nav>
 
-            <div id="display-grid">
+          <div class="flex-wrap justify-between">
             <section id="kontakt">
-                <h4>KONTAKT</h4>
-                <section class="informasjon">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <h5>Adresse:</h5>
-                    <p>F.A Gate 48 1720 Sarpelona</p>
-                </section>
-                <section class="informasjon">
-                    <i class="fa-solid fa-phone"></i>
-                    <h5>Telefon:</h5>
-                    <p>+47 69 72 80 40</p>
-                </section>
-                <section class="informasjon">
-                    <i class="fa-solid fa-envelope"></i>
-                    <h5>E-Post:</h5>
-                    <p>JimmyBu@hiof.no</p>
-                </section>
-                <section class="informasjon">
-                    <i class="fa-solid fa-clock"></i>
-                    <h5>Åpningstider:</h5>
-                    <p>08:00 - 20:00</p>
-                </section>
+              <h4>KONTAKT</h4>
+              <section class="informasjon">
+                <i class="fa-solid fa-location-dot"></i>
+                <h5>Adresse:</h5>
+                <p>F.A Gate 48 1720 Sarpelona</p>
+              </section>
+              <section class="informasjon">
+                <i class="fa-solid fa-phone"></i>
+                <h5>Telefon:</h5>
+                <p>+47 69 72 80 40</p>
+              </section>
+              <section class="informasjon">
+                <i class="fa-solid fa-envelope"></i>
+                <h5>E-Post:</h5>
+                <p>JimmyBu@hiof.no</p>
+              </section>
+              <section class="informasjon">
+                <i class="fa-solid fa-clock"></i>
+                <h5>Åpningstider:</h5>
+                <p>08:00 - 20:00</p>
+              </section>
             </section>
 
             <nav id="snarveier">
-                <aside>
-                    <h4>SNARVEIER</h4>
-                    <ul>
-                        <li><a href="#">Produkter</a></li>
-                        <li><a href="#">Kategorier</a></li>
-                        <li><a href="#">Kontakt oss</a></li>
-                    </ul>
-                </aside>
+              <aside>
+                <h4>SNARVEIER</h4>
+                <ul>
+                  <li><a href="#">Produkter</a></li>
+                  <li><a href="#">Kategorier</a></li>
+                  <li><a href="#">Kontakt oss</a></li>
+                </ul>
+              </aside>
             </nav>
-            </div>
+
             <section id="sosiale-medier">
-                <h4>SOSIALE MEDIER</h4>
-                <label class="sosiale-footer">
-                    <i class="fa-brands fa-square-instagram"></i>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-brands fa-pinterest"></i>
-                </label>
+              <h4>SOSIALE MEDIER</h4>
+              <label class="sosiale-footer">
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-pinterest"></i>
+              </label>
             </section>
+          </div>
         </footer>
-</main>
-</div>
-</body>
+      </main>
+    </div>
+  </body>
 </html>
