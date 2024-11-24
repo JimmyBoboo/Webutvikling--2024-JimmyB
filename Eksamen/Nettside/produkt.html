@@ -3,9 +3,9 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="icons/css/fontawesome.css" rel="stylesheet" />
-    <link href="icons/css/brands.css" rel="stylesheet" />
-    <link href="icons/css/all.css" rel="stylesheet" />
+    <link href="icons/css/fontawesome.css" rel="stylesheet">
+    <link href="icons/css/brands.css" rel="stylesheet">
+    <link href="icons/css/all.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produkt</title>
@@ -14,13 +14,13 @@
     <header id="global-header">
         <form id="search">
                 <input type="search" placeholder="Søk her" id="søkefelt">
-                <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
+                <label class="search"><i class="fa-solid fa-magnifying-glass"></i></label>
         </form>
         <nav class="navbar">
             <ul>
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="produkt.html">Produkter</a></li>
-                <li><a href="index.html"><img src="./bilder/logo.png" alt="Nettside logo" id="logo-header"></a></li>
+                <li><a href="index.html"><img src="./bilder/logo.png" alt="Nettside logo" class="logo-header"></a></li>
                 <li><a href="#">Kategorier</a></li>
                 <li><a href="#">Kontakt oss</a></li>
             </ul>
@@ -28,8 +28,40 @@
         <label id="icons-hoyre">
             <i class="fa-regular fa-user"></i>
             <i class="fa-regular fa-heart"></i>
-            <a href="handlekurv.html"><i class="fa-solid fa-cart-shopping"></i></a></i>
+            <a href="handlekurv.html"><i class="fa-solid fa-cart-shopping"></i></a>
         </label>
     </header>
+    <main>
+        <nav>
+            <ul id="brodsmulestil">
+                <li><a href="index.html">Hjem <i class="fa-solid fa-arrow-right"></i> </a></li>
+                <li><a href="#">Kategori <i class="fa-solid fa-arrow-right"></i> </a></li>
+                <li><a href="#">Nike-Zoomfly</a></li>
+            </ul>
+
+            <div id="bilde-produkt">
+                <aside class="side-bildene">
+                    <picture>
+                        <img src="./bilder/dressmann.jpg" alt="BildeProdukt 1">
+                    </picture>
+                    <picture>
+                        <img src="./bilder/dressmann.jpg" alt="BildeProdukt 2 ">
+                    </picture>
+                    <picture>
+                        <img src="./bilder/dressmann.jpg" alt="BildeProdukt 3">
+                    </picture>
+                </aside>
+                <picture class="hovedbilde">
+                    <img src="./bilder/dressmann.jpg" alt="BildeProdukt hoved">
+                </picture>
+            </div>
+            <section id="produkt-info">
+                <h3>Louis Vuitton - Silke Dress</h3>
+                <a href="#"><h4>Louis Vuitton</h4></a>
+                <p>8 999 kr inkl. mva.</p>
+                <p>Farge: Svart</p>
+            </section>
+        </nav>
+    </main>
 </body>
 </html>

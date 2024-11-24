@@ -397,6 +397,75 @@ article header{
     padding:  0 0 1rem;
 }
 
+/* ProduktSiden */
+
+#brodsmulestil{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+    padding: 1.8rem 0;
+}
+
+#brodsmulestil a{
+    text-decoration: none;
+    padding: 0.3rem;
+    color: #000;
+} 
+
+/* Bilde i produktsiden */
+
+#bilde-produkt{
+    display: flex;
+    margin: 1rem;
+}
+
+.side-bildene{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.hovedbilde {
+    margin-left: 10px;
+}
+
+.hovedbilde img{
+    max-width: 300px;
+    max-height: 500px;
+}
+
+#bilde-produkt .side-bildene picture img{
+    max-width: 300px;
+    max-height: 140px;
+}
+
+#produkt-info{
+    margin: 1rem;
+    
+}
+
+#produkt-info h3{
+    padding: 0 0 1rem;
+}
+
+#produkt-info a h4{
+    padding: 0 0 0.5rem;
+    color: #948787;
+
+}
+
+#produkt-info p{
+    padding: 0 0 1rem;
+
+}
+
+
+
+
+
+
 
 
 /* Desktop */
