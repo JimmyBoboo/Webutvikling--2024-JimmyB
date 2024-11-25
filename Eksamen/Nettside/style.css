@@ -565,30 +565,30 @@ details[open] summary::after {
 
 /* Handlekurv-Siden */
 
-#handlekurv-brodsmule a{
+#handlekurv-brodsmule a {
   margin: 1rem;
   text-decoration: none;
   list-style: none;
 }
 
-#handlekurv-kasse{
+#handlekurv-kasse {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem;
 }
 /* Handlekurv - Checkout */
-#shoppingbag{
+#shoppingbag {
   padding: 2rem;
   justify-content: center;
   border: 1px solid #ddd;
   margin: 1rem;
 }
 
-#shoppingbag h2{
+#shoppingbag h2 {
   padding: 1rem;
 }
-.handlekurv-produkt{
+.handlekurv-produkt {
   margin: 1rem;
 }
 
@@ -600,61 +600,60 @@ details[open] summary::after {
   padding: 0 0 1rem;
 }
 
-.handlekurv-produkt-info{
+.handlekurv-produkt-info {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   margin: auto;
 }
 
-.produkt-tykkelse{
+.produkt-tykkelse {
   font-size: 20px;
-  
 }
-.handlekurv-label{
+.handlekurv-label {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
 }
 
-.fonter-shoppingbag{
-  padding:  0 0 2rem 0;
+.fonter-shoppingbag {
+  padding: 0 0 2rem 0;
 }
 
-.fonter-shoppingbag i{
+.fonter-shoppingbag i {
   padding: 0.5rem 1rem 0 0;
 }
 
 /* Handlekurv - Opplysninger */
 
-#kontakt-opplysninger{
+#kontakt-opplysninger {
   padding: 2rem;
   border: 1px solid #ddd;
   margin: 1rem;
 }
 
-#kontakt-opplysninger h2{
+#kontakt-opplysninger h2 {
   padding: 2rem;
 }
-.opplysninger-checkout label{
+.opplysninger-checkout label {
   margin: 0.5rem;
   font-weight: 500;
 }
 
-.opplysninger-checkout input{
+.opplysninger-checkout input {
   display: flex;
   padding: 0.4rem 4rem;
   margin: 0.5rem;
   border-radius: 1px;
 }
 
-#kontakt-informasjon{
-  padding: 4rem 0 0 ;
+#kontakt-informasjon {
+  padding: 4rem 0 0;
 }
 
 #lagre-knapp {
-  padding: 1rem 9rem ;
+  padding: 1rem 9rem;
   border-radius: 1px;
   cursor: pointer;
   color: rgb(255, 255, 255);
@@ -664,7 +663,7 @@ details[open] summary::after {
   justify-content: center;
 }
 
-#avbryt-handlekurv{
+#avbryt-handlekurv {
   align-items: center;
   display: flex;
   justify-content: center;
@@ -673,18 +672,17 @@ details[open] summary::after {
 
 /* Handlekurv - Levering */
 
-#levering-handlekurv{
+#levering-handlekurv {
   padding: 2rem;
   border: 1px solid #ddd;
   margin: 1rem;
 }
 
-#levering-handlekurv h2{
+#levering-handlekurv h2 {
   padding: 2rem;
 }
 
-
-.ekspress-levering{
+.ekspress-levering {
   padding: 2rem;
   margin: 1rem;
   border-radius: 5px;
@@ -695,35 +693,35 @@ details[open] summary::after {
 .virkedager {
   color: #666;
 }
-.ekspress-levering p{
+.ekspress-levering p {
   padding: 0.5rem;
 }
 
 /* Handlekurv - Betaling */
 
-#betaling-handlekurv{
-    padding: 2rem;
-    border: 1px solid #ddd;
-    margin: 1rem;
+#betaling-handlekurv {
+  padding: 2rem;
+  border: 1px solid #ddd;
+  margin: 1rem;
 }
 
-#betaling-handlekurv h2{
+#betaling-handlekurv h2 {
   padding: 2rem;
 }
 
-#betaling-skjema label{
+#betaling-skjema label {
   margin: 0.5rem;
   font-weight: 500;
 }
 
-#betaling-skjema input{
+#betaling-skjema input {
   display: flex;
   padding: 0.4rem 4rem;
   margin: 0.5rem;
   border-radius: 1px;
 }
 
-#betaling-sjekkut{
+#betaling-sjekkut {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -732,12 +730,12 @@ details[open] summary::after {
   padding: 5rem 0 0;
 }
 
-#betaling-sjekkut h2{
+#betaling-sjekkut h2 {
   padding: 0rem;
 }
 
 #full-kjop {
-  padding: 1rem 9rem ;
+  padding: 1rem 9rem;
   border-radius: 1px;
   cursor: pointer;
   color: rgb(255, 255, 255);
@@ -747,7 +745,7 @@ details[open] summary::after {
   justify-content: center;
 }
 
-#samtykke-skjema{
+#samtykke-skjema {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -755,15 +753,14 @@ details[open] summary::after {
   padding: 1.5rem;
 }
 
-#radio-valg-kjop{
+#radio-valg-kjop {
   padding: 1.5rem;
 }
 
-#radio-valg-kjop label{
+#radio-valg-kjop label {
   display: flex;
   flex-direction: row;
-  gap: 1rem
-  ;
+  gap: 1rem;
 }
 /* --------------Desktop--------------- */
 @media (min-width: 768px) {
