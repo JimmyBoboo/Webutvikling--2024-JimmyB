@@ -1,36 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="icons/css/fontawesome.css" rel="stylesheet" />
-    <link href="icons/css/brands.css" rel="stylesheet" />
-    <link href="icons/css/all.css" rel="stylesheet" />
+    <link href="icons/css/fontawesome.css" rel="stylesheet">
+    <link href="icons/css/brands.css" rel="stylesheet">
+    <link href="icons/css/all.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Handlekurv</title>
-</head>
-<body>
-    <header id="global-header">
+  </head>
+  <body>
+    <div id="flex-container">
+      <header id="global-header">
         <form id="search">
-                <input type="search" placeholder="Søk her" id="søkefelt">
-                <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
+          <input type="search" placeholder="Søk her" id="søkefelt">
+          <label class="search"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></label>
         </form>
         <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Hjem</a></li>
-                <li><a href="#">Produkter</a></li>
-                <li><a href="index.html"><img src="./bilder/logo.png" alt="Nettside logo" id="logo-header"></a></li>
-                <li><a href="#">Kategorier</a></li>
-                <li><a href="#">Kontakt oss</a></li>
-            </ul>
+          <ul>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="produkt.html">Produkter</a></li>
+            <li>
+              <a href="index.html"
+                ><img
+                  src="./bilder/logo.png"
+                  alt="Nettside logo"
+                  class="logo-header"
+              ></a>
+            </li>
+            <li><a href="#">Kategorier</a></li>
+            <li><a href="#">Kontakt oss</a></li>
+          </ul>
         </nav>
         <label id="icons-hoyre">
-            <i class="fa-regular fa-user"></i>
-            <i class="fa-regular fa-heart"></i>
-            <a href="handlekurv.html"><i class="fa-solid fa-cart-shopping"></i></a></i>
+          <i class="fa-regular fa-user"></i>
+          <i class="fa-regular fa-heart"></i>
+          <a href="handlekurv.html"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
         </label>
-    </header>
+      </header>
+      <main>
+        <nav id="handlekurv-brodsmule">
+            <a href="index.html"><i class="fa-solid fa-arrow-left"></i> Fortsett og handle</a>
+        </nav>
+        <h1 id="handlekurv-kasse">Kasse</h1>
+        <section id="shoppingbag">
+          <h2>1. SHOPPINGBAGEN DIN</h2>
+          <article class="handlekurv-produkt">
+          <img src="./bilder/dressmann.jpg" alt="Produkt-Bilde" class="handlekurv-bilde">
+          <header class="handlekurv-produkt-info">
+            <h3 class="produkt-tykkelse">Louis vuitton - Svart Dress</h3>
+            <p>Kr 1999</p>
+            <p>Farge: Beige</p>
+          </header>
+          <form class="handlekurv-label">
+                <label>Størrelse</label>
+                <select name="Størrelse">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <label>Antall</label>
+                <select name="Antall">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+          </form>
+          <footer class="fonter-shoppingbag">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-trash"></i>
+          </footer>
+        </article>
+        <article class="handlekurv-produkt">
+            <img src="./bilder/dressmann.jpg" alt="Produkt-Bilde" class="handlekurv-bilde">
+            <header class="handlekurv-produkt-info">
+              <h3 class="produkt-tykkelse">Louis vuitton - Svart Dress</h3>
+              <p>Kr 1999</p>
+              <p>Farge: Beige</p>
+            </header>
+            <form class="handlekurv-label">
+                  <label>Størrelse</label>
+                  <select name="Størrelse">
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                      <option value="XL">XL</option>
+                  </select>
+                  <label>Antall</label>
+                  <select name="Antall">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                  </select>
+            </form>
+            <footer class="fonter-shoppingbag">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-trash"></i>
+            </footer>
+          </article>
+          <article class="handlekurv-produkt">
+            <img src="./bilder/dressmann.jpg" alt="Produkt-Bilde" class="handlekurv-bilde">
+            <header class="handlekurv-produkt-info">
+              <h3 class="produkt-tykkelse">Louis vuitton - Svart Dress</h3>
+              <p>Kr 1999</p>
+              <p>Farge: Beige</p>
+            </header>
+            <form class="handlekurv-label">
+                  <label>Størrelse</label>
+                  <select name="Størrelse">
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                      <option value="XL">XL</option>
+                  </select>
+                  <label>Antall</label>
+                  <select name="Antall">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                  </select>
+            </form>
+            <footer class="fonter-shoppingbag">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-trash"></i>
+            </footer>
+          </article>
+          
+        </section>
+        <section id="kontakt-opplysninger">
+            <h2>2. DINE OPPLYSNINGER</h2>
+            <h3>Leveringsadresse</h3>
+            <form class="opplysninger-checkout">
+
+                
+                <label for="navn">Navn</label><br>
+                <input type="text" name="navn" placeholder="Ola" id="navn" maxlength="45" required><br>
+                
+                <label for="etternavn">Etternavn</label><br>
+                <input type="text" name="etternavn" id="etternavn" placeholder="Nordmann*" maxlength="45" required><br>
+
+                <label for="gateadresse">Gateadresse</label><br>
+                <input type="text" name="gateadresse" id="gateadresse" placeholder="BRA Veien 4*" required><br>
+
+                <label for="postnummer">Postnummer</label><br>
+                <input type="text" name="postnummer" id="postnummer" placeholder="1722*"  required><br>
+
+                <label for="poststed">Poststed</label><br>
+                <input type="text" name="poststed" id="poststed" placeholder="Halden*" pattern="\d{4}" required><br>
+
+            <section id="kontakt-informasjon">
+            <h3>Kontaktinformasjon</h3>
+            <label for="epost">E-post</label><br>
+            <input type="email" name="epost" id="epost" placeholder="Olanordmann@hiof.no*" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required><br>
+            
+            <label for="telefon">Telefon</label><br>
+            <input type="tel" name="telefon" id="telefon" placeholder="+47 41* *2 350"  required pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+            </section>
+            <button type="submit" id="lagre-knapp">Lagre</button>
+            <a href="#" id="avbryt-handlekurv">Avbryt</a>
+            </form>
+        </section>
+
+        <section id="levering-handlekurv">
+            <h2>3. LEVERING</h2>
+            <h3>Leveringsvalg</h3>
+            <form >
+            <fieldset class="ekspress-levering">
+                    <label> <input type="radio" name="valg"> <strong>Ekspress hjemlevering</strong></label>
+                    <p class="virkedager">3-4 Virkedager</p>
+                    <p>59kr <i class="fa-solid fa-taxi"></i></p>
+                    <p>Bestill hverdag før 08:00 for levering neste arbeidsdag. Leveres hjem til deg før frokost mandag - lørdag. For levering til postnummer 1600-1900 er leveringstiden 2 arbeidsdager.</p>  
+            </fieldset>
+            <fieldset class="ekspress-levering">
+                    <label> <input type="radio" name="valg"> <strong>Ekspress pakke til utleveringssted</strong></label>
+                    <p class="virkedager">3-4 Virkedager</p>
+                    <p>59kr <i class="fa-solid fa-taxi"></i></p>
+                    
+            </fieldset>
+            <fieldset class="ekspress-levering">
+                <label> <input type="radio" name="valg"> <strong>Standard hjemlevering</strong></label>
+                <p class="virkedager">5-7 Virkedager</p>
+                <p>Gratis <i class="fa-solid fa-taxi"></i></p>
+                <p>Leveres hjem til deg før frokost mandag til lørdag innen 4-7 hverdager</p>       
+        </fieldset>
+            </form>
+        </section>
+
+        <section id="betaling-handlekurv">
+            <h2>4. BETALING</h2>
+            <section>
+                <h3>Betal med kort <i class="fa-solid fa-wallet"> </i></h3>
+                <form id="betaling-skjema">
+                    <label for="navn">Skriv inn ditt fullenavn</label><br>
+                    <input type="text" placeholder="Ola Nordmann"><br>
+
+                    <label for="kortnummer">Kortnummer <i class="fa-brands fa-cc-visa"></i> <i class="fa-brands fa-cc-mastercard"> <i class="fa-brands fa-cc-paypal"></i></i></label><br>
+                    <input type="text" id="kortnummer" placeholder="2222 - 3333 - 4444 - 5555" maxlength="19" required><br>
+
+                    <label for="utlopsdato">Utløpsdato <i class="fa-regular fa-calendar-days"></i></label><br>
+                    <input type="text" id="utlopsdato" placeholder="mm/dd/yyyy" required><br>
+
+                    <label for="cvc">CVC/CVV</label><br>
+                    <input type="text" id="cvc" placeholder="CVC/CVV">
+                </form>
+            </section>
+
+            <section id="betaling-sjekkut">
+                <p>Å betale inkl.mva</p>
+                <h2>1 199kr</h2>
+            </section>
+            <button type="submit" id="full-kjop">Fullfør kjøp</button>
+            <div id="samtykke-skjema">
+                <p>Du bekrefter herved at opplysningene og dokumentene du har
+                    oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg
+                    retten til å heve eller avslutte avtaleforholdet dersom det foreligger
+                    uriktige eller ufullstendige opplysninger.
+                    </p>
+                    <form id="radio-valg-kjop">
+                        <label> <input type="radio" name="valg"> Ja takk! Send nyhetsbrev til meg.</label><br>
+                        <label> <input type="radio" name="valg2"> Jeg ønsker å motta tekstmeldinger med tilbud og nyheter</label><br>
+                    </form>
+            </div>
+        </section>
+      </main>
+      <footer>
+        <nav id="ingress">
+          <ul>
+            <li>
+              <a href="index.html"
+                ><img
+                  src="./bilder/logo.png"
+                  alt="Nettside logo"
+                  class="logo-header"
+              /></a>
+            </li>
+          </ul>
+          <p>
+            Quisque mollis erat dolor, in lacinia arcu aliquam nec. dolor, in
+            lacinia arcu aliquam nec. Suspendisse id sagittis tortor.
+          </p>
+        </nav>
+
+        <div class="flex-wrap justify-between">
+          <section id="kontakt">
+            <h4>KONTAKT</h4>
+            <section class="informasjon">
+              <i class="fa-solid fa-location-dot"></i>
+              <h5>Adresse:</h5>
+              <p>F.A Gate 48 1720 Sarpelona</p>
+            </section>
+            <section class="informasjon">
+              <i class="fa-solid fa-phone"></i>
+              <h5>Telefon:</h5>
+              <p>+47 69 72 80 40</p>
+            </section>
+            <section class="informasjon">
+              <i class="fa-solid fa-envelope"></i>
+              <h5>E-Post:</h5>
+              <p>JimmyBu@hiof.no</p>
+            </section>
+            <section class="informasjon">
+              <i class="fa-solid fa-clock"></i>
+              <h5>Åpningstider:</h5>
+              <p>08:00 - 20:00</p>
+            </section>
+          </section>
+
+          <nav id="snarveier">
+            <aside>
+              <h4>SNARVEIER</h4>
+              <ul>
+                <li><a href="#">Produkter</a></li>
+                <li><a href="#">Kategorier</a></li>
+                <li><a href="#">Kontakt oss</a></li>
+              </ul>
+            </aside>
+          </nav>
+
+          <section id="sosiale-medier">
+            <h4>SOSIALE MEDIER</h4>
+            <label class="sosiale-footer">
+              <i class="fa-brands fa-square-instagram"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-pinterest"></i>
+            </label>
+          </section>
+        </div>
+      </footer>
     </div>
-</body>
+  </body>
 </html>

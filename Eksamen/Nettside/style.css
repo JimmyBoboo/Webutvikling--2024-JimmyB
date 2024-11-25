@@ -364,15 +364,27 @@ article header {
   padding: 0 0 1rem;
 }
 
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.justify-between {
+  gap: 1rem;
+  justify-content: space-between;
+}
+
 /* ProduktSiden */
 
+/* Brødsmule Stien */
 .brodsmule-sti {
   padding: 1rem;
   color: #666;
 }
 
 .brodsmule-sti a {
-  color: inherit;
+  color: #000;
   text-decoration: none;
 }
 
@@ -526,15 +538,17 @@ details[open] summary::after {
   margin: 1rem;
 }
 
-.flex-wrap {
+/* Overflow - Lignende produkter */
+
+#lignende-produkter {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 2rem;
 }
 
-.justify-between {
-  gap: 1rem;
-  justify-content: space-between;
+#lignende-produkter a {
+  text-decoration: none;
 }
 
 #produktene-overflow {
@@ -549,6 +563,208 @@ details[open] summary::after {
   padding-right: 0.5rem;
 }
 
+/* Handlekurv-Siden */
+
+#handlekurv-brodsmule a{
+  margin: 1rem;
+  text-decoration: none;
+  list-style: none;
+}
+
+#handlekurv-kasse{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+/* Handlekurv - Checkout */
+#shoppingbag{
+  padding: 2rem;
+  justify-content: center;
+  border: 1px solid #ddd;
+  margin: 1rem;
+}
+
+#shoppingbag h2{
+  padding: 1rem;
+}
+.handlekurv-produkt{
+  margin: 1rem;
+}
+
+.handlekurv-bilde {
+  max-width: 300px;
+  height: 300px;
+  margin: auto;
+  border-radius: 3px;
+  padding: 0 0 1rem;
+}
+
+.handlekurv-produkt-info{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: auto;
+}
+
+.produkt-tykkelse{
+  font-size: 20px;
+  
+}
+.handlekurv-label{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.fonter-shoppingbag{
+  padding:  0 0 2rem 0;
+}
+
+.fonter-shoppingbag i{
+  padding: 0.5rem 1rem 0 0;
+}
+
+/* Handlekurv - Opplysninger */
+
+#kontakt-opplysninger{
+  padding: 2rem;
+  border: 1px solid #ddd;
+  margin: 1rem;
+}
+
+#kontakt-opplysninger h2{
+  padding: 2rem;
+}
+.opplysninger-checkout label{
+  margin: 0.5rem;
+  font-weight: 500;
+}
+
+.opplysninger-checkout input{
+  display: flex;
+  padding: 0.4rem 4rem;
+  margin: 0.5rem;
+  border-radius: 1px;
+}
+
+#kontakt-informasjon{
+  padding: 4rem 0 0 ;
+}
+
+#lagre-knapp {
+  padding: 1rem 9rem ;
+  border-radius: 1px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: rgb(65, 62, 62);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#avbryt-handlekurv{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+/* Handlekurv - Levering */
+
+#levering-handlekurv{
+  padding: 2rem;
+  border: 1px solid #ddd;
+  margin: 1rem;
+}
+
+#levering-handlekurv h2{
+  padding: 2rem;
+}
+
+
+.ekspress-levering{
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.virkedager {
+  color: #666;
+}
+.ekspress-levering p{
+  padding: 0.5rem;
+}
+
+/* Handlekurv - Betaling */
+
+#betaling-handlekurv{
+    padding: 2rem;
+    border: 1px solid #ddd;
+    margin: 1rem;
+}
+
+#betaling-handlekurv h2{
+  padding: 2rem;
+}
+
+#betaling-skjema label{
+  margin: 0.5rem;
+  font-weight: 500;
+}
+
+#betaling-skjema input{
+  display: flex;
+  padding: 0.4rem 4rem;
+  margin: 0.5rem;
+  border-radius: 1px;
+}
+
+#betaling-sjekkut{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 5rem 0 0;
+}
+
+#betaling-sjekkut h2{
+  padding: 0rem;
+}
+
+#full-kjop {
+  padding: 1rem 9rem ;
+  border-radius: 1px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: rgb(65, 62, 62);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#samtykke-skjema{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+#radio-valg-kjop{
+  padding: 1.5rem;
+}
+
+#radio-valg-kjop label{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem
+  ;
+}
 /* --------------Desktop--------------- */
 @media (min-width: 768px) {
   #flex-container {
@@ -741,5 +957,13 @@ details[open] summary::after {
   .smabilder img {
     flex: 1;
     width: 100%;
+  }
+
+  /* Overflow - Lignende produkter */
+
+  #lignende-produkter {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
   }
 }
