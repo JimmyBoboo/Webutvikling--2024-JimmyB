@@ -88,11 +88,21 @@ body {
 .slide h2 {
   font-size: 2rem;
   margin-bottom: 10px;
+  color: white;
 }
 
 .slide p {
   font-size: 1rem;
   margin-bottom: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+
+
+.banner-tekst{
+  display: flex;
+  flex-direction: column;
 }
 
 .les-mer {
@@ -108,21 +118,14 @@ body {
 .slide-desktop {
   padding: 5rem 10rem;
   border-radius: 20px;
-  height: 100%;
   margin: 10px;
-  background-image: url(https://picsum.photos/id/26/500/500);
+  background-image: url(bilder/landskap.jpg);
 }
 
 .slide-desktop {
   display: none;
 }
-/* .slider2{
-    background-image: url(https://picsum.photos/id/27/500/500);
-}
 
-.slider3{
-    background-image: url(https://picsum.photos/id/26/500/500);
-}   */
 
 /* Våre mest populære produkter Seksjon */
 
@@ -305,7 +308,7 @@ article header {
 
 #anmeldelser article img {
   max-width: 100px;
-  border-radius: 50%;
+  border-radius: 50% 50% 50% 50%;
   margin: 1rem;
 }
 
@@ -320,6 +323,10 @@ article header {
 }
 
 /* Footer */
+
+#ingress{
+  border-top: 3px solid whitesmoke;
+}
 
 #ingress {
   margin: 0.5rem;
@@ -364,6 +371,10 @@ article header {
   padding: 0 0 1rem;
 }
 
+.sosiale-footer a{
+  color: #000;
+  
+}
 .flex-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -526,6 +537,7 @@ details[open] summary::after {
   padding: 1rem;
   border: 1px solid;
   border-radius: 1rem;
+  margin: 1rem;
 }
 
 #stjerne-produkt h5 {
@@ -536,6 +548,32 @@ details[open] summary::after {
   list-style: none;
   text-decoration: none;
   margin: 1rem;
+}
+/* Tabell - detaljer */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+caption {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+th, td {
+  padding: 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  font-weight: bold;
+  background-color: #f5f5f5;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
 }
 
 /* Overflow - Lignende produkter */
@@ -643,9 +681,10 @@ details[open] summary::after {
 
 .opplysninger-checkout input {
   display: flex;
-  padding: 0.4rem 4rem;
-  margin: 0.5rem;
-  border-radius: 1px;
+  padding: 0.7rem 4.3rem;
+  margin: 0.7rem;
+  border: 1px solid #969393;
+  
 }
 
 #kontakt-informasjon {
@@ -653,7 +692,7 @@ details[open] summary::after {
 }
 
 #lagre-knapp {
-  padding: 1rem 9rem;
+  padding: 2rem 9rem;
   border-radius: 1px;
   cursor: pointer;
   color: rgb(255, 255, 255);
@@ -716,9 +755,11 @@ details[open] summary::after {
 
 #betaling-skjema input {
   display: flex;
-  padding: 0.4rem 4rem;
+  padding: 0.7rem 4.3rem;
   margin: 0.5rem;
   border-radius: 1px;
+  border: 1px solid #bebaba;
+  
 }
 
 #betaling-sjekkut {
@@ -727,7 +768,7 @@ details[open] summary::after {
   justify-content: center;
   align-items: center;
   margin: 1rem;
-  padding: 5rem 0 0;
+  padding: 2rem 0 0;
 }
 
 #betaling-sjekkut h2 {
@@ -743,6 +784,7 @@ details[open] summary::after {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 1rem;
 }
 
 #samtykke-skjema {
@@ -801,8 +843,10 @@ details[open] summary::after {
   .slide,
   .slide-desktop {
     flex-shrink: 0;
-    width: 1100px;
+    width: 1170px;
   }
+
+  
 
   .slide-desktop figure {
     display: flex;
@@ -816,11 +860,13 @@ details[open] summary::after {
   .slide-desktop h2 {
     font-size: 2rem;
     margin-bottom: 10px;
+    color: white;
   }
 
   .slide-desktop p {
     font-size: 1rem;
     margin-bottom: 15px;
+    color: white;
   }
   /* Populare produkter */
 
@@ -846,8 +892,10 @@ details[open] summary::after {
 
   .product-card {
     max-width: 350px;
-    padding: 2rem;
+    margin: 1.5rem;
     justify-content: space-between;
+    height: 400px;
+    
   }
 
   .skobilde {
@@ -954,6 +1002,7 @@ details[open] summary::after {
   .smabilder img {
     flex: 1;
     width: 100%;
+    max-width: 160px;
   }
 
   /* Overflow - Lignende produkter */
@@ -963,4 +1012,75 @@ details[open] summary::after {
     display: flex;
     flex-direction: row;
   }
+
+  /* checkout  */
+  #shoppingbag{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .handlekurv-produkt{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    border-top: 0.5px solid #e6e0e0;
+    border-radius: 1px;
+  }
+
+  .handlekurv-label{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  /* opplysninger */
+
+  .opplysninger-checkout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #lagre-knapp{
+    width: 50%;
+  }
+
+  #kontakt-informasjon input{
+    padding: 0.9rem 11.7rem;
+    border: 1px solid #bebaba;
+  }
+
+  #leverings-adresse input{
+    padding: 0.9rem 11.7rem;
+  }
+
+  /* betaling */
+
+  #betaling-skjema{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #betal-med-kort{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 1rem;
+  }
+
+  #betaling-skjema input{
+    padding: 0.9rem 11.7rem;
+    border: 1px solid #bebaba;
+  }
+
+  #full-kjop{
+    width: 50%;
+    padding: 2rem 9rem;
+    
+  }
+
+  .main-mellomrom{
+    margin: 0 0 3rem;
+  }
 }
+

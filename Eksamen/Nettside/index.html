@@ -22,7 +22,7 @@
         <nav class="navbar">
           <ul>
             <li><a href="index.html">Hjem</a></li>
-            <li><a href="produkt.html">Produkter</a></li>
+            <li><a href="#popular-products">Produkter</a></li>
             <li>
               <a href="index.html"
                 ><img
@@ -38,17 +38,17 @@
         <label id="icons-hoyre">
           <i class="fa-regular fa-user"></i>
           <i class="fa-regular fa-heart"></i>
-          <a href="handlekurv.html"
+          <a href="checkout.html"
             ><i class="fa-solid fa-cart-shopping"></i
           ></a>
         </label>
       </header>
-      <main>
+      <main class="main-mellomrom">
         <!-- Banneren -->
         <section class="banner">
           <article class="slide">
             <figure>
-              <figcaption>
+              <figcaption class="banner-tekst">
                 <h2>Lorem ipsum dolor sit amet, consectetur.</h2>
                 <p>
                   Mauris nec convallis ligula. Praesent in magna lectus.
@@ -63,7 +63,7 @@
           </article>
           <article class="slide-desktop">
             <figure>
-              <figcaption>
+              <figcaption class="banner-tekst">
                 <h2>Lorem ipsum dolor sit amet, consectetur.</h2>
                 <p>
                   Mauris nec convallis ligula. Praesent in magna lectus.
@@ -78,7 +78,7 @@
           </article>
           <article class="slide-desktop">
             <figure>
-              <figcaption>
+              <figcaption class="banner-tekst">
                 <h2>Lorem ipsum dolor sit amet, consectetur.</h2>
                 <p>
                   Mauris nec convallis ligula. Praesent in magna lectus.
@@ -111,6 +111,7 @@
                 media="(max-width:400px)"
                 srcset="Nettside/bilder/skobilde.png"
               />
+              
               <img src="bilder/skobilde.jpg" alt="Sko" class="skobilde" />
             </picture>
             <header>
@@ -268,7 +269,8 @@
           <h2>Anmeldelser</h2>
           <div id="anmeldelser-boks">
             <article class="produkt-anmeldelse">
-              <img src="bilder/anmeldelse.jpg" alt="Produktanmeldelse" />
+              <!-- Bildet er tatt av <a href="https://pixabay.com/no/users/israeldavid76-1787463/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4609514">David Ortega</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4609514">Pixabay</a> -->
+              <img src="bilder/portrett.jpg" alt="Produktanmeldelse" />
               <h3>Aenean tellus</h3>
               <ul>
                 <li>
@@ -290,7 +292,8 @@
             </article>
 
             <article class="produkt-anmeldelse">
-              <img src="bilder/anmeldelse.jpg" alt="Produktanmeldelse" />
+              <!-- Bildet er tatt av <a href="https://pixabay.com/no/users/israeldavid76-1787463/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4609514">David Ortega</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4609514">Pixabay</a> -->
+              <img src="bilder/portrett.jpg" alt="Produktanmeldelse" />
               <h3>Aenean tellus</h3>
               <ul>
                 <li>
@@ -312,7 +315,8 @@
             </article>
 
             <article class="produkt-anmeldelse">
-              <img src="bilder/anmeldelse.jpg" alt="Produktanmeldelse" />
+              <!-- Bildet er tatt av <a href="https://pixabay.com/no/users/israeldavid76-1787463/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4609514">David Ortega</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4609514">Pixabay</a> -->
+              <img src="bilder/portrett.jpg" alt="Produktanmeldelse" />
               <h3>Aenean tellus</h3>
               <ul>
                 <li>
@@ -334,7 +338,8 @@
             </article>
 
             <article class="produkt-anmeldelse">
-              <img src="bilder/anmeldelse.jpg" alt="Produktanmeldelse" />
+              <!-- Bildet er tatt av <a href="https://pixabay.com/no/users/israeldavid76-1787463/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4609514">David Ortega</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4609514">Pixabay</a> -->
+              <img src="bilder/portrett.jpg" alt="Produktanmeldelse" />
               <h3>Aenean tellus</h3>
               <ul>
                 <li>
@@ -356,73 +361,72 @@
             </article>
           </div>
         </section>
+      </main>
+      <footer>
+        <nav id="ingress">
+          <ul>
+            <li>
+              <a href="index.html"
+                ><img
+                  src="./bilder/logo.png"
+                  alt="Nettside logo"
+                  class="logo-header"
+              /></a>
+            </li>
+          </ul>
+          <p>
+            Quisque mollis erat dolor, in lacinia arcu aliquam nec. dolor, in
+            lacinia arcu aliquam nec. Suspendisse id sagittis tortor.
+          </p>
+        </nav>
 
-        <footer>
-          <nav id="ingress">
-            <ul>
-              <li>
-                <a href="index.html"
-                  ><img
-                    src="./bilder/logo.png"
-                    alt="Nettside logo"
-                    class="logo-header"
-                /></a>
-              </li>
-            </ul>
-            <p>
-              Quisque mollis erat dolor, in lacinia arcu aliquam nec. dolor, in
-              lacinia arcu aliquam nec. Suspendisse id sagittis tortor.
-            </p>
+        <div class="flex-wrap justify-between">
+          <section id="kontakt">
+            <h4>KONTAKT</h4>
+            <section class="informasjon">
+              <i class="fa-solid fa-location-dot"></i>
+              <h5>Adresse:</h5>
+              <p>F.A Gate 48 1720 Sarpelona</p>
+            </section>
+            <section class="informasjon">
+              <i class="fa-solid fa-phone"></i>
+              <h5>Telefon:</h5>
+              <p>+47 69 72 80 40</p>
+            </section>
+            <section class="informasjon">
+              <i class="fa-solid fa-envelope"></i>
+              <h5>E-Post:</h5>
+              <p>JimmyBu@hiof.no</p>
+            </section>
+            <section class="informasjon">
+              <i class="fa-solid fa-clock"></i>
+              <h5>Åpningstider:</h5>
+              <p>08:00 - 20:00</p>
+            </section>
+          </section>
+
+          <nav id="snarveier">
+            <aside>
+              <h4>SNARVEIER</h4>
+              <ul>
+                <li><a href="produkt.html">Produkter</a></li>
+                <li><a href="#kategori-grid">Kategorier</a></li>
+                <li><a href="#">Kontakt oss</a></li>
+              </ul>
+            </aside>
           </nav>
 
-          <div class="flex-wrap justify-between">
-            <section id="kontakt">
-              <h4>KONTAKT</h4>
-              <section class="informasjon">
-                <i class="fa-solid fa-location-dot"></i>
-                <h5>Adresse:</h5>
-                <p>F.A Gate 48 1720 Sarpelona</p>
-              </section>
-              <section class="informasjon">
-                <i class="fa-solid fa-phone"></i>
-                <h5>Telefon:</h5>
-                <p>+47 69 72 80 40</p>
-              </section>
-              <section class="informasjon">
-                <i class="fa-solid fa-envelope"></i>
-                <h5>E-Post:</h5>
-                <p>JimmyBu@hiof.no</p>
-              </section>
-              <section class="informasjon">
-                <i class="fa-solid fa-clock"></i>
-                <h5>Åpningstider:</h5>
-                <p>08:00 - 20:00</p>
-              </section>
-            </section>
-
-            <nav id="snarveier">
-              <aside>
-                <h4>SNARVEIER</h4>
-                <ul>
-                  <li><a href="produkt.html">Produkter</a></li>
-                  <li><a href="#kategori-grid">Kategorier</a></li>
-                  <li><a href="#">Kontakt oss</a></li>
-                </ul>
-              </aside>
-            </nav>
-
-            <section id="sosiale-medier">
-              <h4>SOSIALE MEDIER</h4>
-              <label class="sosiale-footer">
-                <i class="fa-brands fa-square-instagram"></i>
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-pinterest"></i>
-              </label>
-            </section>
-          </div>
-        </footer>
-      </main>
+          <section id="sosiale-medier">
+            <h4>SOSIALE MEDIER</h4>
+            <label class="sosiale-footer">
+              <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+              <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://no.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+            </label>
+          </section>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

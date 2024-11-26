@@ -22,7 +22,7 @@
         <nav class="navbar">
           <ul>
             <li><a href="index.html">Hjem</a></li>
-            <li><a href="produkt.html">Produkter</a></li>
+            <li><a href="index.html">Produkter</a></li>
             <li>
               <a href="index.html"
                 ><img
@@ -38,16 +38,16 @@
         <label id="icons-hoyre">
           <i class="fa-regular fa-user"></i>
           <i class="fa-regular fa-heart"></i>
-          <a href="handlekurv.html"
+          <a href="checkout.html"
             ><i class="fa-solid fa-cart-shopping"></i
           ></a>
         </label>
       </header>
-      <main id="produkt-siden">
+      <main id="produkt-siden" class="main-mellomrom">
         <nav class="brodsmule-sti">
-          <a href="#">Hjem</a>
-          <a href="#">Kategori</a>
-          <a href="#">Louis Vuitton - Dress</a>
+          <a href="index.html">Hjem</a>
+          <a href="index.html">Kategori</a>
+          <a href="produkt.html">Louis Vuitton - Dress</a>
         </nav>
         <div class="flex-wrap">
           <figure class="produkt-bildene">
@@ -77,10 +77,10 @@
           </figure>
 
           <section class="produkt-info">
-            <h1>Produktnavn</h1>
-            <a href="#" class="merke">MERKENAVN</a>
+            <h1>Louis Vuitton - Skinndress</h1>
+            <a href="#" class="merke">Louis Vuitton</a>
             <p class="pris">5 195 kr inkl. mva.</p>
-            <p>Farge: Beige</p>
+            <p>Farge: <strong>Svart/grå</strong></p>
 
             <form>
               <label for="size">Velg størrelse</label>
@@ -109,17 +109,88 @@
 
             <details>
               <summary>Matriale og vedlikehold</summary>
-              <p>Product material and care information goes here.</p>
+              <p>
+                <strong>Overmateriale: </strong> 98%
+              </p>
+
+              <p>
+                <strong>fôr: </strong> 100% polyester
+              </p>
+
+              <p>
+                <strong>Vedlikeholdsråd: </strong> Kjemisk rens
+              </p>
             </details>
 
             <details>
               <summary>Produktdetaljer</summary>
-              <p>Product details go here.</p>
+              <p><strong>Høyde til midje:</strong> Høy</p>
+                <p><strong>Krage: </strong> Fancy-Krage</p>
+                <p><strong>Lukking </strong> Knapp</p>
+                <p><strong>Mønster </strong> Ensfarget</p>
+                <p><strong>Artikkelnummer: </strong> OH02215213-S31</p>
+                
+                
             </details>
 
             <details>
               <summary>Størrelsestablell</summary>
-              <p>Size chart goes here.</p>
+              <p>    
+                <table>
+                  <thead>
+                      <tr>
+                          <th scope="col">EU</th>
+                          <th scope="col">INT</th>
+                          <th scope="col">BRYSTVIDDE</th>
+                          <th scope="col">LIVVIDDE</th>
+                          <th scope="col">HOFTEMÅL</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>32</td>
+                          <td>XXS</td>
+                          <td>76</td>
+                          <td>63</td>
+                          <td>85</td>
+                      </tr>
+                      <tr>
+                          <td>34</td>
+                          <td>XS</td>
+                          <td>80</td>
+                          <td>66</td>
+                          <td>89</td>
+                      </tr>
+                      <tr>
+                          <td>36</td>
+                          <td>S</td>
+                          <td>84</td>
+                          <td>69</td>
+                          <td>93</td>
+                      </tr>
+                      <tr>
+                          <td>38</td>
+                          <td>M</td>
+                          <td>88</td>
+                          <td>72</td>
+                          <td>97</td>
+                      </tr>
+                      <tr>
+                          <td>40</td>
+                          <td>L</td>
+                          <td>92</td>
+                          <td>76</td>
+                          <td>100</td>
+                      </tr>
+                      <tr>
+                          <td>42</td>
+                          <td>XL</td>
+                          <td>96</td>
+                          <td>80</td>
+                          <td>103</td>
+                      </tr>
+                  </tbody>
+              </table>
             </details>
 
             <details>
@@ -160,12 +231,8 @@
         <div id="produktene-overflow">
           <article class="product-card-overflow">
             <picture>
-              <!-- Photo by <a href="https://unsplash.com/@dominostudio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Domino Studio</a> on <a href="https://unsplash.com/photos/unpaired-red-nike-sneaker-164_6wVEHfI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
-              <source
-                media="(max-width:400px)"
-                srcset="Nettside/bilder/skobilde.png"
-              />
-              <img src="bilder/skobilde.jpg" alt="Sko" class="skobilde" />
+              <!-- Bildet er tatt av <a href="https://pixabay.com/no/users/matham315-4262769/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1979136">matham315</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1979136">Pixabay</a> -->
+              <img src="bilder/dressanmeldelse.jpg" alt="dress" class="skobilde" />
             </picture>
             <header>
               <a href="#"><h3>Nike - ZoomFly</h3></a>
@@ -182,12 +249,8 @@
           </article>
           <article class="product-card-overflow">
             <picture>
-              <!-- Photo by <a href="https://unsplash.com/@dominostudio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Domino Studio</a> on <a href="https://unsplash.com/photos/unpaired-red-nike-sneaker-164_6wVEHfI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
-              <source
-                media="(max-width:400px)"
-                srcset="Nettside/bilder/skobilde.png"
-              />
-              <img src="bilder/skobilde.jpg" alt="Sko" class="skobilde" />
+              <!-- Bildet er tatt av <a href="https://pixabay.com/no/users/matham315-4262769/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1979136">matham315</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1979136">Pixabay</a> -->
+              <img src="bilder/dressanmeldelse.jpg" alt="dress" class="skobilde" />
             </picture>
             <header>
               <a href="#"><h3>Nike - ZoomFly</h3></a>
@@ -204,12 +267,8 @@
           </article>
           <article class="product-card-overflow">
             <picture>
-              <!-- Photo by <a href="https://unsplash.com/@dominostudio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Domino Studio</a> on <a href="https://unsplash.com/photos/unpaired-red-nike-sneaker-164_6wVEHfI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
-              <source
-                media="(max-width:400px)"
-                srcset="Nettside/bilder/skobilde.png"
-              />
-              <img src="bilder/skobilde.jpg" alt="Sko" class="skobilde" />
+              <!-- Bildet er tatt av <a href="https://pixabay.com/no/users/matham315-4262769/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1979136">matham315</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1979136">Pixabay</a> -->
+              <img src="bilder/dressanmeldelse.jpg" alt="dress" class="skobilde" />
             </picture>
             <header>
               <a href="#"><h3>Nike - ZoomFly</h3></a>
@@ -226,12 +285,8 @@
           </article>
           <article class="product-card-overflow">
             <picture>
-              <!-- Photo by <a href="https://unsplash.com/@dominostudio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Domino Studio</a> on <a href="https://unsplash.com/photos/unpaired-red-nike-sneaker-164_6wVEHfI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
-              <source
-                media="(max-width:400px)"
-                srcset="Nettside/bilder/skobilde.png"
-              />
-              <img src="bilder/skobilde.jpg" alt="Sko" class="skobilde" />
+              <!-- Bildet er tatt av <a href="https://pixabay.com/no/users/matham315-4262769/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1979136">matham315</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1979136">Pixabay</a> -->
+              <img src="bilder/dressanmeldelse.jpg" alt="dress" class="skobilde" />
             </picture>
             <header>
               <a href="#"><h3>Nike - ZoomFly</h3></a>
@@ -248,12 +303,8 @@
           </article>
           <article class="product-card-overflow">
             <picture>
-              <!-- Photo by <a href="https://unsplash.com/@dominostudio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Domino Studio</a> on <a href="https://unsplash.com/photos/unpaired-red-nike-sneaker-164_6wVEHfI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
-              <source
-                media="(max-width:400px)"
-                srcset="Nettside/bilder/skobilde.png"
-              />
-              <img src="bilder/skobilde.jpg" alt="Sko" class="skobilde" />
+              <!-- Bildet er tatt av <a href="https://pixabay.com/no/users/matham315-4262769/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1979136">matham315</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1979136">Pixabay</a> -->
+              <img src="bilder/dressanmeldelse.jpg" alt="dress" class="skobilde" />
             </picture>
             <header>
               <a href="#"><h3>Nike - ZoomFly</h3></a>
@@ -270,12 +321,8 @@
           </article>
           <article class="product-card-overflow">
             <picture>
-              <!-- Photo by <a href="https://unsplash.com/@dominostudio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Domino Studio</a> on <a href="https://unsplash.com/photos/unpaired-red-nike-sneaker-164_6wVEHfI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
-              <source
-                media="(max-width:400px)"
-                srcset="Nettside/bilder/skobilde.png"
-              />
-              <img src="bilder/skobilde.jpg" alt="Sko" class="skobilde" />
+              <!-- Bildet er tatt av <a href="https://pixabay.com/no/users/matham315-4262769/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1979136">matham315</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1979136">Pixabay</a> -->
+              <img src="bilder/dressanmeldelse.jpg" alt="dress" class="skobilde" />
             </picture>
             <header>
               <a href="#"><h3>Nike - ZoomFly</h3></a>
@@ -349,10 +396,10 @@
           <section id="sosiale-medier">
             <h4>SOSIALE MEDIER</h4>
             <label class="sosiale-footer">
-              <i class="fa-brands fa-square-instagram"></i>
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-linkedin"></i>
-              <i class="fa-brands fa-pinterest"></i>
+              <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+              <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://no.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
             </label>
           </section>
         </div>
