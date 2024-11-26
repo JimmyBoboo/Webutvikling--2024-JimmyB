@@ -76,6 +76,15 @@ body {
   overflow: hidden;
 }
 
+.arrow-venstre{
+  visibility: hidden;
+}
+
+.arrow-hoyre{
+  visibility: hidden;
+
+}
+
 .slide figure {
   display: flex;
   align-items: flex-start;
@@ -154,6 +163,7 @@ body {
 #knapper-produkter {
   display: flex;
   justify-content: space-between;
+  padding: 2rem;
 }
 
 .knapper-prod {
@@ -161,7 +171,7 @@ body {
   border: 0.3px solid black;
   color: #000000;
   font-size: 1rem;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2.5rem;
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -178,7 +188,18 @@ body {
   margin: 0.1rem;
   align-content: center;
   padding: 0 0 2rem;
+  position: relative;
 }
+
+ .hjerte-produkt{
+  position: absolute;
+  left: 355px;
+  top: 30px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 1rem;
+} 
 
 .skobilde {
   display: flex;
@@ -308,7 +329,8 @@ article header {
 
 #anmeldelser article img {
   max-width: 100px;
-  border-radius: 50% 50% 50% 50%;
+  max-height: 100px;
+  border-radius: 50%;
   margin: 1rem;
 }
 
@@ -681,8 +703,9 @@ tr:hover {
 
 .opplysninger-checkout input {
   display: flex;
-  padding: 0.7rem 4.3rem;
-  margin: 0.7rem;
+  padding: 0.7rem 1rem;
+  width: 100%;
+  margin: 0.7rem 0;
   border: 1px solid #969393;
   
 }
@@ -692,7 +715,7 @@ tr:hover {
 }
 
 #lagre-knapp {
-  padding: 2rem 9rem;
+  padding: 1rem 9rem;
   border-radius: 1px;
   cursor: pointer;
   color: rgb(255, 255, 255);
@@ -700,6 +723,7 @@ tr:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
 }
 
 #avbryt-handlekurv {
@@ -755,10 +779,11 @@ tr:hover {
 
 #betaling-skjema input {
   display: flex;
-  padding: 0.7rem 4.3rem;
+  padding: 0.7rem 1rem;
   margin: 0.5rem;
   border-radius: 1px;
   border: 1px solid #bebaba;
+  width: 100%;
   
 }
 
@@ -836,6 +861,18 @@ tr:hover {
     overflow: auto;
   }
 
+  .arrow-venstre{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+  }
+  
+  .arrow-hoyre{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+  }
+
   .slide-desktop {
     display: block;
   }
@@ -878,6 +915,16 @@ tr:hover {
     align-items: center;
   }
 
+  .hjerte-produkt {
+    position: relative;
+    left: 280px;
+    top: 60px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 1rem;
+}
+
   #popular-products h2 {
     font-size: 40px;
     padding: 1rem;
@@ -903,7 +950,7 @@ tr:hover {
   }
 
   #tekst-boks {
-    padding: 5rem;
+    padding: 5rem 0 0;
   }
 
   #tekst-boks h2 {
@@ -1005,6 +1052,8 @@ tr:hover {
     max-width: 160px;
   }
 
+
+
   /* Overflow - Lignende produkter */
 
   #lignende-produkter {
@@ -1041,17 +1090,41 @@ tr:hover {
     align-items: center;
   }
 
+  .opplysninger-checkout input{
+    display: flex;
+    padding: 0.9rem 1rem;
+    width: 100%;
+    margin: 0.7rem;
+    border: 1px solid #969393;
+  }
+
   #lagre-knapp{
     width: 50%;
   }
-
+  #kontakt-informasjon{
+    width: 80%;
+  }
   #kontakt-informasjon input{
-    padding: 0.9rem 11.7rem;
+    padding: 0.9rem 1rem;
     border: 1px solid #bebaba;
+    width: 100%;
+  }
+
+  #leverings-adresse{
+    width: 80%;
   }
 
   #leverings-adresse input{
-    padding: 0.9rem 11.7rem;
+    padding: 0.9rem 1rem;
+    width: 100%;
+    border: 1px solid #bebaba;
+  }
+
+  #leverings-adresse{
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 3fr;
+    
   }
 
   /* betaling */
@@ -1066,21 +1139,25 @@ tr:hover {
     display: flex;
     justify-content: center;
     margin: 0 0 1rem;
+    gap: 8px;
   }
 
   #betaling-skjema input{
-    padding: 0.9rem 11.7rem;
+    padding: 0.9rem 1rem;
     border: 1px solid #bebaba;
+    width: 80%;
   }
 
   #full-kjop{
     width: 50%;
-    padding: 2rem 9rem;
-    
+    padding: 1rem 2rem;
   }
 
   .main-mellomrom{
-    margin: 0 0 3rem;
+    margin-bottom:3rem;
   }
+
+  
 }
+
 
