@@ -1099,7 +1099,7 @@ tr:hover {
   }
 
   #lagre-knapp{
-    width: 50%;
+    width: 80%;
   }
   #kontakt-informasjon{
     width: 80%;
@@ -1112,7 +1112,17 @@ tr:hover {
 
   #leverings-adresse{
     width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
   }
+
+  .grid-informasjon3{
+    grid-area: 2 / 1 / 3 / 3;
+  }
+
+
 
   #leverings-adresse input{
     padding: 0.9rem 1rem;
@@ -1120,12 +1130,8 @@ tr:hover {
     border: 1px solid #bebaba;
   }
 
-  #leverings-adresse{
-    display: grid;
-    grid-template-columns: 2fr;
-    grid-template-rows: 3fr;
-    
-  }
+
+
 
   /* betaling */
 
@@ -1135,11 +1141,15 @@ tr:hover {
     align-items: center;
   }
 
+
+
+  
   #betal-med-kort{
     display: flex;
     justify-content: center;
     margin: 0 0 1rem;
     gap: 8px;
+    
   }
 
   #betaling-skjema input{
@@ -1149,7 +1159,7 @@ tr:hover {
   }
 
   #full-kjop{
-    width: 50%;
+    width: 80%;
     padding: 1rem 2rem;
   }
 

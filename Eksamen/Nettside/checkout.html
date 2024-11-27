@@ -139,23 +139,32 @@
         <section id="kontakt-opplysninger">
             <h2>2. DINE OPPLYSNINGER</h2>
             <form class="opplysninger-checkout">
-
+              <h3>Leveringsadresse</h3>
                 <div id="leverings-adresse">
-                  <h3>Leveringsadresse</h3>
+        
+
+                <p class="grid-informasjon1">
                 <label for="navn">Navn</label>
                 <input type="text" name="navn" placeholder="Ola" id="navn" maxlength="45" required>
-                
+                </p>
+                <p class="grid-informasjon2">
                 <label for="etternavn">Etternavn</label>
                 <input type="text" name="etternavn" id="etternavn" placeholder="Nordmann*" maxlength="45" required>
+                </p>
 
+                <p class="grid-informasjon3">
                 <label for="gateadresse">Gateadresse</label>
                 <input type="text" name="gateadresse" id="gateadresse" placeholder="BRA Veien 4*" required>
-
+                </p>
+                <p class="grid-informasjon4">
                 <label for="postnummer">Postnummer</label>
                 <input type="number" name="postnummer" id="postnummer" placeholder="1722*" >
+                </p>
 
+                <p class="grid-informasjon5">
                 <label for="poststed">Poststed</label>
                 <input type="text" name="poststed" id="poststed" placeholder="Halden*" pattern="\d{4}" required>
+                </p>
               </div>
             <section id="kontakt-informasjon">
             <h3>Kontaktinformasjon</h3>
@@ -200,18 +209,25 @@
             <section>
                 <h3 id="betal-med-kort">Betal med kort <i class="fa-solid fa-wallet"> </i></h3>
                 <form id="betaling-skjema">
+
                     <label for="navn">Skriv inn ditt fullenavn</label>
                     <input type="text" placeholder="Ola Nordmann">
 
+
+
                     <label for="kortnummer">Kortnummer <i class="fa-brands fa-cc-visa"></i> <i class="fa-brands fa-cc-mastercard"> <i class="fa-brands fa-cc-paypal"></i></i></label>
-                    <input type="number" id="kortnummer" placeholder="2222 - 3333 - 4444 - 5555"  required>
+                    <input type="number" id="kortnummer" placeholder="2222 - 3333 - 4444 - 5555"  pattern="\d{4}[\s-]?\d{4}[\s-]?\d{4}[\s-]?\d{4}" required>
+
+
 
                     <label for="utlopsdato">Utløpsdato <i class="fa-regular fa-calendar-days"></i></label>
                     <input type="date" id="utlopsdato"  required>
 
                     <label for="cvc">CVC/CVV</label>
                     <input type="number" id="cvc" placeholder="CVC/CVV">
-                </form>
+
+
+                  </form>
             </section>
 
             
