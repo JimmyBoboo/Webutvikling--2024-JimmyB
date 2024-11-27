@@ -1142,8 +1142,6 @@ tr:hover {
   }
 
 
-
-  
   #betal-med-kort{
     display: flex;
     justify-content: center;
@@ -1167,6 +1165,17 @@ tr:hover {
     margin-bottom:3rem;
   }
 
+  #grid-betaling-skjema{
+    display: grid;
+    width: 82%;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+
+  
   
 }
 
