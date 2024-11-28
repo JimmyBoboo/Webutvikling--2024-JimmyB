@@ -149,10 +149,8 @@ body {
 }
 
 #popular-products h2 {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 #popular-products p {
@@ -195,7 +193,7 @@ body {
 
  .hjerte-produkt{
   position: absolute;
-  left: 355px;
+  right: 25px;
   top: 30px;
   border: 1px solid #fff;
   background-color: #fff;
@@ -831,6 +829,11 @@ tr:hover {
   flex-direction: row;
   gap: 1rem;
 }
+
+#tekst-boks h2 {
+  text-align: center;
+}
+
 /* --------------Desktop--------------- */
 @media (min-width: 768px) {
   #flex-container {
